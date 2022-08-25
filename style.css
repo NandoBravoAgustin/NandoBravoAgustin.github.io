@@ -602,3 +602,19 @@
 			margin-right: 0px;
 		}
 	}
+	@media(max-width: 375px) {
+		#coment .coment-base .coment-box{
+			padding: 1px;
+			margin: 10px 1px;
+			width: 320px;
+		}
+		#features .features-base .feat-box img{
+			position: relative;
+			left: -10px;
+
+		}
+		#reservation{
+			padding-left: 0px;
+			padding-right: 0px;
+		}
+	}
