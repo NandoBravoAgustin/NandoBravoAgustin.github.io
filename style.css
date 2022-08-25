@@ -603,6 +603,13 @@
 		}
 	}
 	@media(max-width: 375px) {
+		
+		#hero div{
+			width: 300px;
+		}
+		#hero div span{
+			font-size: 15px;
+		}	
 		#coment .coment-base .coment-box{
 			padding: 1px;
 			margin: 10px 1px;
