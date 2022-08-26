@@ -123,6 +123,9 @@
 					color: white;
 					transition: 0.5s;
 				}
+			#hero .img img{
+				height: 100%;
+			}
 /*features*/
 	#features{
 		display: flex;
