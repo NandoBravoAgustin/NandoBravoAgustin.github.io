@@ -52,6 +52,7 @@
 			#header img{
 				display: flex;
 				width: 60px;
+				height: 60px;
 			}
 			#header h1{
 				margin: auto;
