@@ -3,6 +3,38 @@
 		margin: 0px;
 		position: relative;
 	}
+	.dorado{
+		color: #FFCB00FF !important;
+	}
+	@font-face{
+		src: url("fonts/Aboreto-Regular.ttf");
+		font-family: aboreto;
+	}
+	.aboreto{
+		font-family: aboreto;
+	}
+	@font-face{
+		src: url("fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf");
+		font-family: playfair-italic;
+	}
+
+	.playfair{
+		font-family: playfair;
+	}
+	@font-face{
+		src: url("fonts/PlayfairDisplay-Medium.ttf");
+		font-family: playfair-medium;
+	}
+	.playfair-medium{
+		font-family: playfair-medium;
+	}
+	@font-face{
+		src: url("fonts/LibreBaskerville-Bold.ttf");
+		font-family: libre;
+	}
+	.libre{
+		font-family: libre;
+	}
 /*Header*/
 	#header{
 		display: flex;
@@ -23,6 +55,10 @@
 	}
 	#header.sticky .img h1{
 		color: black;
+	}
+	#header h1{
+		font-family: aboreto;
+
 	}
 		#header .navigation{
 			display: flex;
@@ -93,7 +129,7 @@
 				font-size: 35px;
 			}
 			#hero div span{
-				color: #FFFFFF7E;
+				color: #FFFFFFCD;
 				font-size: 21px;
 				display: flex;
 				text-align: center;
@@ -135,9 +171,11 @@
 	}
 		#features h3{
 			font-size: 40px;
-			color: #FFE51EFF;
+			color: black;
 			position: relative;
-			display: inline-block;
+			display: flex;
+			text-align: center;
+			justify-content: center;
 		}
 			
 
@@ -169,9 +207,9 @@
 				#features .features-base .feat-box a{
 					font-size: 20px;
 					text-decoration: none;
-					background-color: #FFE51EFF;
+					background-color: black;
 					padding: 10px;
-					color: white;
+					color: #FFE51EFF;
 				}
 /*reservation*/
 	#reservation{
@@ -236,24 +274,17 @@
 				height: 4px;
 				background-color: black;
 				position: absolute;
-				bottom: -10px;
-				left: 0px;
+				
 			}
 		#rooms h3{
 			font-size: 40px;
-			color: #FFE51EFF;
+			color: black;
 			position: relative;
 			display: inline-block;
+			justify-content: center;
+   		 text-align: center;
 		}
-			#rooms h3::after{
-				content: '';
-				width: 310px;
-				height: 4px;
-				background-color: black;
-				position: absolute;
-				bottom: -10px;
-				left: 0px;
-			}
+			
 		
 		#rooms .rooms-base .rooms-box{
 			display: flex;
@@ -315,10 +346,11 @@
 				color: #FFE51EFF;
 				position: relative;
 				display: inline-block;
+				text-align: center;
 			}
 			#coment .coment-base h4{
 				font-size: 20px;
-				height: 50px;
+				height: 45px;
 			}
 			#coment .coment-base .coment-box{
 				background-color: white;
@@ -455,6 +487,16 @@
 		#footer .footer{
 			display: unset;
 		}
+		
+		#hero div h2{
+			font-size: 28px;
+		}
+		#hero div span{
+			font-size: 17px;
+		}
+		#hero div button{
+			font-size: 18px;
+		}
 	}
 	@media (max-width: 900px) {
 		#reservation li{
@@ -479,12 +521,14 @@
 		}
 		#header .menuToggle{
 			display: flex;
-			width: 60px;
-			height: 60px;
+			width: 45px;
+			height: 40px;
 			position: relative;
 			cursor: pointer;
 			align-items: center;
 			z-index: 1000;
+			margin-right: 10px;
+			margin-top: 5px;
 		}
 		#header .menuToggle::after{
 			content: '';
@@ -542,13 +586,14 @@
 			padding: 70px 0px;
 			margin: 0px;
 			z-index: 1000;
-			transform: translateX(300px);
-			transition: 0.5s;
+			transform: translateX(310px) translateY(-50px);
+/*			transform: translateY(-50px);
+*/			transition: 0.5s;
 			background-color: #0000007B;
     		backdrop-filter: blur(4.5px);
 		}
 		.menuToggle.active ul{
-			transform: translateX(0px);
+			transform: translateX(10px) translateY(-13px);
 			transition: 0.5s;
 		}
 			.menuToggle ul li{
@@ -571,12 +616,18 @@
 		#hero div button{
 			margin-top: 30px;
 		}
+		#rooms .rooms-box .rooms-description li {
+		    display: flex;
+		    align-items: center;
+		    margin-bottom: 10px;
+		}
 	}
 	@media (max-width: 517px) {
 		#reservation{
 			padding-bottom: 150px;
 			justify-content: center;
 		}
+
 		#reservation button{
 			display: flex;
 			right: auto;
@@ -588,6 +639,10 @@
 		#rooms{
 			padding-left: 7px;
 			padding-right: 7px;
+		}
+
+		#rooms .rooms-box .rooms-description li img{
+			width: 25px;
 		}
 		#coment{
 			padding-left: 7px;
@@ -604,18 +659,34 @@
 			margin-left: 0px;
 			margin-right: 0px;
 		}
+		#footer{
+			padding: 10px;
+		}
+		#footer h5 {
+		    font-size: 20px;
+		    color: white;
+		}
+		#footer li a, #footer li span {
+		    color: white;
+		    text-decoration: none;
+		    font-size: 14px;
+		}
 	}
 	@media(max-width: 375px) {
-		
+		#hero div h2{
+			font-size: 18px;
+		}
 		#hero div{
 			width: 300px;
 		}
 		#hero div span{
-			font-size: 15px;
+			font-size: 13px;
 		}	
+		#coment .coment-base div{
+			margin: 0px;
+		}
 		#coment .coment-base .coment-box{
-			padding: 1px;
-			margin: 10px 1px;
+			padding: 30px;
 			width: 320px;
 		}
 		#features .features-base .feat-box img{
