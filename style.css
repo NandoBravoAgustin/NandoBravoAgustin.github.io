@@ -681,6 +681,12 @@
 		}
 		#hero div span{
 			font-size: 13px;
+		}
+		#features h3{
+			font-size: 30px;
+		}
+		#rooms h3{
+			font-size: 30px;
 		}	
 		#coment .coment-base div{
 			margin: 0px;
@@ -688,6 +694,9 @@
 		#coment .coment-base .coment-box{
 			padding: 30px;
 			width: 320px;
+		}
+		#coment h3{
+			font-size: 30px;
 		}
 		#features .features-base .feat-box img{
 			position: relative;
@@ -697,5 +706,19 @@
 		#reservation{
 			padding-left: 0px;
 			padding-right: 0px;
+		}
+	}
+	@media(max-width: 338px){
+		#features .content-feat{
+			width: 220px;
+		}
+		#coment .coment-base .coment-box{
+			width: 100%;
+		}
+		#hero div{
+			width: 240px;
+		}
+		#features .features-base .feat-box{
+			min-width: 200px;
 		}
 	}
