@@ -3,8 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Hotel Nando | Servicio | Disfruta de los servicios de nuestro hotel</title>
+	<meta name="description" content="Relajate en nuestro Hotel. Gran Hotel Nando tiene como objetivo conseguir que tu visita sea lo mas relajante posible, razon por la que somos el Hotel N°1">
 	<link rel="stylesheet" href="style.css">
+	<meta name="author" content="Nando Agustin Bravo">
+	<meta name="audience" content="all"><!-- de acuerdo al usuario te muestra -->
+	<meta name="keywords" content="hotel, nando, lujoso">
+	<meta name="robots" content="index, all, follow">
+	<meta name="category" content="habitaciones,servicios">
+	<link rel="icon" type="image/x-icon" href="img/iconHotelNando.png">
+	<meta itemprop="telephone" content="+5493522650395"><!-- cuando vos buscas el telefono de mi empresa -->
+
 </head>
 <body>
 	<header id="header">
@@ -14,13 +23,22 @@
 			<h1>NANDO</h1>
 		</div>
 		<nav class="navigation">
-				
+			
 				<li><a href="index.html">Inicio</a></li>
 				<li><a href="servicio.html">Servicios</a></li>
 				<li><a href="habitaciones.html">Habitaciones</a></li>
 				<li><a href="contacto.html">Contacto</a></li>
 			
 		</nav>
+		<div class="menuToggle">
+			<ul class="menu">
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="servicio.html">Servicios</a></li>
+				<li><a href="habitaciones.html">Habitaciones</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</div>
+	
 	</header>
 
 	<main id="main">
@@ -35,14 +53,14 @@
 			</div>
 		</section>
 
-		<section id="rooms" class="servicio">
-			<h3>SERVICIOS</h3>
+		<section id="rooms">
+			<h3 class="aboreto">SERVICIOS</h3>
 			<div class="rooms-base">
 				<div class="rooms-box">
-						<img src="img/hotel5.jpg" alt="">
+					<img src="img/hotel5.jpg" alt="" class="img">
 					
 					<div class="rooms-description">
-						<h4>Comida de primera calidad</h4>
+						<h4 class="dorado">Servicio de comida / Corredor de comidas</h4>
 						<ul>
 							<li><img src="img/arrow.svg" alt="flecha-derecha">Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Veritatis necessitatibus</li>
 							<li><img src="img/arrow.svg" alt="flecha-derecha">Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Nihil corr</li>
@@ -50,28 +68,14 @@
 						</ul>
 						<p>Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Minima molestiae quidem, suscipit veniam aspernatur corporis sed officiis est cum vitae ullam optio. Nemo numquam totam officia, magni, dolores quia rerum?</p>
 
-						<h5></h5>
-					</div>
-				</div>
-				<div class="rooms-box" style="flex-direction: row-reverse;">
-					<div class="img"></div>
-					<img src="img/refresh.jpg" alt="">
-					<div class="rooms-description">
-						<h4>Piscina y Mar</h4>
-						<ul>
-							<li><img src="img/arrow.svg" alt="flecha-derecha">Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Veritatis necessitatibus</li>
-							<li><img src="img/arrow.svg" alt="flecha-derecha">Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Nihil corr</li>
-							<li><img src="img/arrow.svg" alt="flecha-derecha">Lorem ipsum, dolor sit amet consectetur</li>
-						</ul>
-						<p>Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Minima molestiae quidem, suscipit veniam aspernatur corporis sed officiis est cum vitae ullam optio. Nemo numquam totam officia, magni, dolores quia rerum?</p>
-
-						<h5></h5>
+						
 					</div>
 				</div>
 				<div class="rooms-box">
-					<img src="img/woman-clean.jpg" alt="">
+					<div class="img"></div>
+					<img src="img/refresh.jpg" alt="" class="img">
 					<div class="rooms-description">
-						<h4>Duplex Lujosa</h4>
+						<h4 class="dorado">Refresco</h4>
 						<ul>
 							<li><img src="img/arrow.svg" alt="flecha-derecha">Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Veritatis necessitatibus</li>
 							<li><img src="img/arrow.svg" alt="flecha-derecha">Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Nihil corr</li>
@@ -79,13 +83,13 @@
 						</ul>
 						<p>Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Minima molestiae quidem, suscipit veniam aspernatur corporis sed officiis est cum vitae ullam optio. Nemo numquam totam officia, magni, dolores quia rerum?</p>
 
-						<h5></h5>
+						
 					</div>
 				</div>
-				<div class="rooms-box" style="flex-direction: row-reverse;">
-					<img src="img/security.jpg" alt="">
+				<div class="rooms-box">
+					<img src="img/woman-clean.jpg" alt="" class="img">
 					<div class="rooms-description">
-						<h4>Duplex Lujosa</h4>
+						<h4 class="dorado">Servicio de Limpieza</h4>
 						<ul>
 							<li><img src="img/arrow.svg" alt="flecha-derecha">Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Veritatis necessitatibus</li>
 							<li><img src="img/arrow.svg" alt="flecha-derecha">Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Nihil corr</li>
@@ -93,21 +97,54 @@
 						</ul>
 						<p>Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Minima molestiae quidem, suscipit veniam aspernatur corporis sed officiis est cum vitae ullam optio. Nemo numquam totam officia, magni, dolores quia rerum?</p>
 
-						<h5></h5>
 					</div>
+				</div>		
+				<div class="rooms-box">
+					<img src="img/security.jpg" alt="" class="img">
+					<div class="rooms-description">
+						<h4 class="dorado">Seguridad en las habitaciones</h4>
+						<ul>
+							<li><img src="img/arrow.svg" alt="flecha-derecha">Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Veritatis necessitatibus</li>
+							<li><img src="img/arrow.svg" alt="flecha-derecha">Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Nihil corr</li>
+							<li><img src="img/arrow.svg" alt="flecha-derecha">Lorem ipsum, dolor sit amet consectetur</li>
+						</ul>
+						<p>Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Minima molestiae quidem, suscipit veniam aspernatur corporis sed officiis est cum vitae ullam optio. Nemo numquam totam officia, magni, dolores quia rerum?</p>
 				</div>
+		
 			</div>
-		</section>	
-
+		</section>
 		
+		<section id="reservation" style="margin-bottom: 100px;">
+			<li>
+				<label for="fechaentrada">Fecha de entrada</label>
+				<input type="date">
+			</li>
+			<li>
+				<label for="fechasalida">Fecha de salida</label>
+				<input type="date">
+			</li>
+			<li>
+				<label for="adults">Adultos</label>
+				<input type="number">
+			</li>
+			<li>
+				<label for="children">Niños</label>
+				<input type="number">
+			</li>
+			<li>
+				<label for="rooms">Habitaciones</label>
+				<div>
+					<input type="number">
+				</div>
+			</li>
+					<button class="reservation">RESERVAR</button>
+		</section>
 
-		
-
-		<section id="coment" style="margin-bottom: 170px;">
-			<h3>COMENTARIOS</h3>
+		<section id="coment">
+			<h3 class="playfair">COMENTARIOS</h3>
 			<div class="coment-base">
 				<div class="coment-box">
-					<h4>Las Vacaciones Perfectas</h4>
+					<h4>Buen servicio</h4>
 					<div class="stars">
 						<img src="img/star.svg" alt="">
 						<img src="img/star.svg" alt="">
@@ -119,7 +156,7 @@
 					<span>Cristina Avelaria</span>
 				</div>
 				<div class="coment-box">
-					<h4>La mejor comida que he Comido en la vida</h4>
+					<h4>La mejor comida que he probado</h4>
 					<div class="stars">
 						<img src="img/star.svg" alt="">
 						<img src="img/star.svg" alt="">
@@ -131,7 +168,7 @@
 					<span>Nando Bravo</span>
 				</div>
 				<div class="coment-box">
-					<h4>Piscina y mar relajante a la vista</h4>
+					<h4>Buen servicio</h4>
 					<div class="stars">
 						<img src="img/star.svg" alt="">
 						<img src="img/star.svg" alt="">
@@ -151,32 +188,34 @@
 	<footer id="footer">
 		<div class="footer">
 			<div class="footer-column">
-				<h5>Enlances Rapidos</h5>
+				<h5>Enlaces Rapidos</h5>
 				<li><a href="#">Inicio</a></li>
 				<li><a href="#">Servicios</a></li>
 				<li><a href="#">Habitaciones</a></li>
-				<li><a href="#">Contactos</a></li>
+				<li><a href="#">Contacto</a></li>
 			</div>
 			<div class="footer-column">
 				<h5>Privacidad</h5>
 				<li><a href="#">Sobre Nosotros</a></li>
-				<li><a href="#">Contactanos</a></li>
+				<li><a href="#">Redes Sociales</a></li>
 				<li><a href="#">Servicios</a></li>
 			</div>
 			<div class="footer-column">
 				<h5>Alguna duda?</h5>
 				<li><span>Ubicacion: Avenida centenario esqu.Av. Iraola, La Plata, Argentina</span></li>
-				<li><span>Telefono: +54 9 351 2342512</span></li>
-				<li><span>Email: nandoexample@gmail.com</span></li>
+				<li><span>Telefono: <a href="tel:5493522650395">+54 9 351 2342512</a></span></li>
+				<li><span>Email:<a href="mailto:nicnando123@gmail.com" style="text-decoration: underline;"> nandoexample@gmail.com</a></span></li>
 			</div>
 		</div>
 		<div>
-			<a href=""><img src="img/logo-whatsapp.svg" alt=""></a>
+			<a href="https://api.whatsapp.com/send?phone=5493522650395&text=Hola Nando Bravo vi tu Repositorio en github llamado Hotel Nando"><img src="img/logo-whatsapp.svg" alt=""></a>
 			<a href=""><img src="img/logo-instagram.svg" alt=""></a>
 			<a href=""><img src="img/logo-twitter.svg" alt=""></a>
 		</div>
 	</footer>
 
-	<script src="script.js"></script>
+
+	<script src="script.js"></script>		
 </body>
 </html>
+
