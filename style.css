@@ -289,7 +289,12 @@
 		#rooms .rooms-base .rooms-box{
 			display: flex;
 			margin-bottom: 50px;
+
 		}
+		/*#rooms .rooms-base .rooms-box:nth-child(odd){
+			display: flex;
+			flex-direction: row-reverse;
+		}*/
 			#rooms .rooms-box img{
 				width: 50%;
 				height: auto;
@@ -419,12 +424,25 @@
 		box-sizing: border-box;
 		align-items: center;
 	}
+	#hero.contacto{
+		background: linear-gradient(rgba(0, 0, 0, 0.80),rgba(0,0,0,0.5)),url("img/design-3588214_1280.jpg") center/cover no-repeat fixed;
+
+		height: 300px;
+
+	}
+		#hero.contacto h2{
+			color: white;
+			font-size: 60px;
+
+		}
 		#contacto iframe{
 			width: 50%;
 			height: 100%;
 		}
 		#contacto .content-cont{
-			padding: 50px;
+			margin: 30px;
+			margin-top: 100px;
+			margin-bottom: 100px;
 		}
 		#contacto h2{
 			font-size: 30px;
@@ -445,10 +463,24 @@
 			background-color: white;
 		}
 /*responsive*/
+	@media (max-width: 1330px) {
+		#hero.contacto h2{
+			font-size: 50px;
+			width: 100%;
+			display: block;
+		}
+	}
 	@media (max-width: 1230px) {
 		#features{
 			margin: 70px 0px 70px 20px;
 			justify-content: space-around;
+		}
+		#hero.contacto{
+			margin-bottom: 100px;
+		}
+		#hero div{
+			width: 85%;
+			display: flex;
 		}
 		#header{
 			height: 65px;
@@ -496,6 +528,14 @@
 		}
 		#hero div button{
 			font-size: 18px;
+		}
+		#contacto{
+			flex-direction: column;
+			height: auto;
+		}
+		#contacto iframe {
+		    width: 80%;
+		    height: 400px;
 		}
 	}
 	@media (max-width: 900px) {
@@ -587,8 +627,7 @@
 			margin: 0px;
 			z-index: 1000;
 			transform: translateX(310px) translateY(-50px);
-/*			transform: translateY(-50px);
-*/			transition: 0.5s;
+		transition: 0.5s;
 			background-color: #0000007B;
     		backdrop-filter: blur(4.5px);
 		}
@@ -622,12 +661,25 @@
 		    margin-bottom: 10px;
 		}
 	}
-	@media (max-width: 517px) {
+	@media (max-width: 530px) {
 		#reservation{
 			padding-bottom: 150px;
 			justify-content: center;
+
 		}
 
+		#coment .coment-base h4{
+			margin: 0px;
+			font-size: 18px;
+			height: auto;
+		}
+		#coment .coment-base div .stars{
+		    width: 90%;
+		    margin: 10px 0px;
+		}
+		#coment .coment-base p{
+			margin-top: 10px;
+		}
 		#reservation button{
 			display: flex;
 			right: auto;
