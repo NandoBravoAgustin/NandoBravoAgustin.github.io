@@ -667,7 +667,15 @@
 			justify-content: center;
 
 		}
-
+		#hero.contacto h2{
+			font-size: 35px;
+		}
+		#hero.contacto{
+			margin-bottom: 0px;
+		}
+		#contacto .content-cont{
+			margin-top: 40px;
+		}
 		#coment .coment-base h4{
 			margin: 0px;
 			font-size: 18px;
@@ -734,6 +742,10 @@
 		#hero div span{
 			font-size: 13px;
 		}
+		#hero.contacto h2{
+			font-size: 25px;
+		}
+
 		#features h3{
 			font-size: 30px;
 		}
