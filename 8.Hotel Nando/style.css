@@ -1,0 +1,788 @@
+/*Etiquetas Globales*/
+	body{
+		margin: 0px;
+		position: relative;
+	}
+	.dorado{
+		color: #FFCB00FF !important;
+	}
+	@font-face{
+		src: url("fonts/Aboreto-Regular.ttf");
+		font-family: aboreto;
+	}
+	.aboreto{
+		font-family: aboreto;
+	}
+	@font-face{
+		src: url("fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf");
+		font-family: playfair-italic;
+	}
+
+	.playfair{
+		font-family: playfair;
+	}
+	@font-face{
+		src: url("fonts/PlayfairDisplay-Medium.ttf");
+		font-family: playfair-medium;
+	}
+	.playfair-medium{
+		font-family: playfair-medium;
+	}
+	@font-face{
+		src: url("fonts/LibreBaskerville-Bold.ttf");
+		font-family: libre;
+	}
+	.libre{
+		font-family: libre;
+	}
+/*Header*/
+	#header{
+		display: flex;
+		justify-content: space-between;
+		position: fixed;
+		align-items: center;
+		left: 0px;
+		right: 0px;
+		top: 0px;
+	}
+	#header .menuToggle{
+		display: none;
+	}
+	#header.sticky{
+		background-color: white;
+		transition: 0.56s;
+		z-index: 10000;
+	}
+	#header.sticky .img h1{
+		color: black;
+	}
+	#header h1{
+		font-family: aboreto;
+
+	}
+		#header .navigation{
+			display: flex;
+		}
+			#header .navigation li{
+				list-style: none;
+			}
+				#header .navigation li a{
+					text-decoration: none;
+					color: white; 
+					display: block;
+					padding: 10px 20px;
+					margin: 0px 10px;
+					font-size: 20px;
+				}
+				#header.sticky .navigation li a{
+					color: black;
+				}
+					#header .navigation li a:hover{
+						color: white;
+						background-color: #00000070;
+						transition: 0.3s;
+					}
+		#header .img{
+			display: inline-flex;
+			}
+			#header img{
+				display: flex;
+				width: 60px;
+				height: 60px;
+			}
+			#header h1{
+				margin: auto;
+				color: white;
+			}
+/*Hero*/
+	#hero{
+		margin-top: 0px;
+		width: 100%;
+		height: 110vh;
+		align-items: center;
+		display: flex;
+		background: linear-gradient(rgba(0, 0, 0, 0.80),rgba(0,0,0,0.5)),url("img/hero2-hotel.jpg") center/cover no-repeat fixed;
+
+	}
+	#hero.servicio{
+		background: linear-gradient(rgba(0, 0, 0, 0.80),rgba(0,0,0,0.5)),url("img/hotel11.jpg") center/cover no-repeat fixed;
+
+	}
+	#hero.habitaciones{
+		background: linear-gradient(rgba(0, 0, 0, 0.80),rgba(0,0,0,0.5)),url("img/hero-hotel.jpg") center/cover no-repeat fixed;
+
+	}
+		#hero div{
+			padding-top: 200px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin: auto;
+			width: 70%;
+			text-align: center;
+		}
+			#hero div h2{
+				margin-top: 0px;
+				align-items: center;
+				display: flex;
+				color: white;
+				font-size: 35px;
+			}
+			#hero div span{
+				color: #FFFFFFCD;
+				font-size: 21px;
+				display: flex;
+				text-align: center;
+			}
+			#hero div hr{
+				width: 100%;
+				height: 3px;
+				background-color: #FFFFFF7E;
+				color: red;
+				border: 0px solid #FFFFFF7E;
+				border-radius: 50px;
+			}
+			#hero div button{
+				margin-top: 70px;
+				background-color: transparent;
+				border: 3px solid white;
+				color: white;
+				padding: 11px 15px;
+				font-size: 22px;
+				font-family: georgia;
+				cursor: pointer;
+				transition: 0.5s;
+
+			}
+				#hero div button:hover{
+					background-color: #00000074;
+					border: 3px solid black;
+					color: white;
+					transition: 0.5s;
+				}
+			#hero .img img{
+				height: 100%;
+			}
+/*features*/
+	#features{
+		display: flex;
+		flex-direction: column;
+		margin: 70px;
+	}
+		#features h3{
+			font-size: 40px;
+			color: black;
+			position: relative;
+			display: flex;
+			text-align: center;
+			justify-content: center;
+		}
+			
+
+		#features .features-base{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+			#features .features-base .feat-box{
+				min-width: 300px;
+				
+				width: 400px;
+				display: flex;
+				position: relative;
+				margin: 30px 60px;
+			}
+				#features .features-base .feat-box img{
+					width: 57px;
+					position: absolute;
+					left: -75px;
+					top: 20px;
+				}
+				#features .features-base .feat-box h4{
+					font-size: 23px;
+				}
+				#features .features-base .feat-box p{
+					font-size: 18px;
+				}
+				#features .features-base .feat-box a{
+					font-size: 20px;
+					text-decoration: none;
+					background-color: black;
+					padding: 10px;
+					color: #FFE51EFF;
+				}
+/*reservation*/
+	#reservation{
+		display: flex;
+		justify-content: space-between;
+		background: linear-gradient(rgba(0, 0, 0, 0.80),rgba(0,0,0,0.5)),url("img/hotel1.jpg") center;
+		padding: 80px 30px;
+		align-items: center;
+		flex-wrap: wrap;
+		position: relative;
+		padding-bottom: 120px;
+	}
+	#reservation li{
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		margin: auto 10px;
+		flex-wrap: wrap;
+		width: 200px;
+		margin: 10px;
+	}	
+		#reservation li label{
+			color: white;
+			margin-bottom: 10px;
+			font-size: 20px;
+		}
+		#reservation div{
+			display: flex;
+		}
+		#reservation input{
+			height: 37px;
+			width: 100%;
+		}
+		#reservation button{
+			height: auto;
+			width: 200px;
+			margin-top: 70px;
+			background-color: transparent;
+			border: 3px solid white;
+			color: white;
+			padding: 11px 15px;
+			font-size: 22px;
+			font-family: georgia;
+			cursor: pointer;
+			transition: 0.5s;
+			position: absolute;
+			right: 39px;
+			bottom: 60px;
+		}		
+/*ROOMS*/
+	#rooms{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		padding: 50px;
+		box-sizing: border-box;
+		position: relative;
+	}
+		#rooms.servicio h3::after{
+				content: '';
+				width: 220px;
+				height: 4px;
+				background-color: black;
+				position: absolute;
+				
+			}
+		#rooms h3{
+			font-size: 40px;
+			color: black;
+			position: relative;
+			display: inline-block;
+			justify-content: center;
+   		 text-align: center;
+		}
+			
+		
+		#rooms .rooms-base .rooms-box{
+			display: flex;
+			margin-bottom: 50px;
+
+		}
+		/*#rooms .rooms-base .rooms-box:nth-child(odd){
+			display: flex;
+			flex-direction: row-reverse;
+		}*/
+			#rooms .rooms-box img{
+				width: 50%;
+				height: auto;
+				object-fit: contain;
+
+			}
+				
+			#rooms .rooms-box .rooms-description{
+				display: flex;
+				flex-direction: column;
+				background-color: #161616FF;
+				padding-left: 10px;
+			}
+			#rooms .rooms-box .rooms-description *{
+				color: white;
+			}
+				#rooms .rooms-box .rooms-description h4{
+					display: block;
+					font-size: 30px;
+				}
+				#rooms .rooms-box .rooms-description h5{
+					font-size: 35px;
+					color: gold;
+				}
+				#rooms .rooms-box .rooms-description ul{
+					padding-left: 0px;
+				}
+				#rooms .rooms-box .rooms-description li{
+					display: flex;
+					align-items: center;
+				}
+				#rooms .rooms-box .rooms-description li img{
+					width: 40px;
+					filter: invert(88%) sepia(11%) saturate(6433%) hue-rotate(359deg) brightness(102%) contrast(103%);
+
+				}
+/*COMENTARIOS*/
+	#coment{
+		display: flex;
+		flex-direction: column;
+		background: linear-gradient(rgba(0, 0, 0, 0.80),rgba(0,0,0,0.5)),url("img/jardin.jpg") center/cover no-repeat fixed;
+		min-width: 250px;
+		flex-wrap: wrap;
+		padding: 90px 70px;
+	}
+
+		#coment .coment-base{
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+		}
+			#coment h3{
+				font-size: 40px;
+				color: #FFE51EFF;
+				position: relative;
+				display: inline-block;
+				text-align: center;
+			}
+			#coment .coment-base h4{
+				font-size: 20px;
+				height: 45px;
+			}
+			#coment .coment-base .coment-box{
+				background-color: white;
+				width: 350px;
+				padding: 40px;
+				box-sizing: border-box;
+			}	
+		.stars{
+			display: flex;
+
+		}
+		.stars img{
+			width: 27px;
+			filter: invert(88%) sepia(11%) saturate(6433%) hue-rotate(359deg) brightness(102%) contrast(103%);
+
+		}
+/*FOOTERS*/
+	#footer{
+		display: flex;
+		flex-direction: column;
+		background-color: #161616FF;
+		padding: 50px;
+	}
+		#footer .footer{
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 30px;
+		}
+		#footer h5{
+			font-size: 25px;
+			color: white;
+		}
+		#footer li{
+			list-style: none;
+			margin-bottom: 15px;
+		}
+			#footer li a,#footer li span{
+				color: white;
+				text-decoration: none;
+				font-size: 18px;
+			}
+		#footer div img
+		{
+			width: 37px;
+			filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(0deg) brightness(100%) contrast(100%);
+ 			margin-right: 20px;
+		}
+		.links img{
+			width: 37px;
+			margin-right: 20px;
+			margin-bottom: 40px;
+			margin-top: 40px;
+		}
+	a img.whatsapp {
+		display: flex;
+		width: 40px;
+		height: 40px;
+		position: sticky;
+	}
+/*contactos*/
+	#contacto{
+		display: flex;
+		width: 100%;
+		height: 40vw;
+		padding: 20px;
+		box-sizing: border-box;
+		align-items: center;
+	}
+	#hero.contacto{
+		background: linear-gradient(rgba(0, 0, 0, 0.80),rgba(0,0,0,0.5)),url("img/design-3588214_1280.jpg") center/cover no-repeat fixed;
+
+		height: 300px;
+
+	}
+		#hero.contacto h2{
+			color: white;
+			font-size: 60px;
+
+		}
+		#contacto iframe{
+			width: 50%;
+			height: 100%;
+		}
+		#contacto .content-cont{
+			margin: 30px;
+			margin-top: 100px;
+			margin-bottom: 100px;
+		}
+		#contacto h2{
+			font-size: 30px;
+		}
+		#contacto h5{
+			font-size: 20px;
+		}
+		#contacto b{
+			color: #494949FF
+		}
+	#contacto .links img{
+		padding: 13px;
+		border: 1px solid black;
+		margin-right: 4px;
+	}
+		#contacto .links img:hover{
+			filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(0deg) brightness(100%) contrast(100%);
+			background-color: white;
+		}
+/*responsive*/
+	@media (max-width: 1330px) {
+		#hero.contacto h2{
+			font-size: 50px;
+			width: 100%;
+			display: block;
+		}
+	}
+	@media (max-width: 1230px) {
+		#features{
+			margin: 70px 0px 70px 20px;
+			justify-content: space-around;
+		}
+		#hero.contacto{
+			margin-bottom: 100px;
+		}
+		#hero div{
+			width: 85%;
+			display: flex;
+		}
+		#header{
+			height: 65px;
+		}
+		#features .features-base .feat-box{
+			width: 300px;
+		}
+		#reservation{
+			padding: 80px 10px;
+			display: flex;
+			flex-direction: unset;
+			left: 0px;
+		}
+		#reservation li{
+			width: 400px;
+
+		}
+		#reservation button{
+			bottom: 80px;
+		}
+		#coment .coment-base .coment-box{
+			margin: 10px;
+		}
+		#rooms .rooms-box{
+			display: flex;
+			flex-direction: column;
+		}
+		#rooms .rooms-box img.img{
+			width: 100%;
+			height: 450px;
+			object-fit: cover;
+		}
+
+	}
+	@media (max-width: 1000px) {
+		#footer .footer{
+			display: unset;
+		}
+		
+		#hero div h2{
+			font-size: 28px;
+		}
+		#hero div span{
+			font-size: 17px;
+		}
+		#hero div button{
+			font-size: 18px;
+		}
+		#contacto{
+			flex-direction: column;
+			height: auto;
+		}
+		#contacto iframe {
+		    width: 80%;
+		    height: 400px;
+		}
+	}
+	@media (max-width: 900px) {
+		#reservation li{
+			width: 300px;
+		}
+		#features .features-base{
+			display: flex;
+			flex-direction: column;
+		}
+		#features .features-base .feat-box{
+			width: 80%;
+			margin-left: auto;
+			margin-right: auto;
+
+		}
+		#rooms .rooms-box img.img{
+			height: 350px;
+			object-fit: cover;
+		}
+		#header .navigation{
+			display: none;
+		}
+		#header .menuToggle{
+			display: flex;
+			width: 45px;
+			height: 40px;
+			position: relative;
+			cursor: pointer;
+			align-items: center;
+			z-index: 1000;
+			margin-right: 10px;
+			margin-top: 5px;
+		}
+		#header .menuToggle::after{
+			content: '';
+			width: 100%;
+			height: 4px;
+			background-color: white;
+			position: absolute;
+			box-shadow: 0px 20px 0px white;
+			border-radius: 50px;
+			z-index: 1000;
+			transition: 0.5s;
+		}
+		#header .menuToggle::before{
+			content: '';
+			width: 100%;
+			height: 4px;
+			background-color: white;
+			position: absolute;
+			border-radius: 50px;
+			transform: translateY(-20px);
+			z-index: 10000;
+			transition: 0.5s;
+		}
+			#header .menuToggle.active::after{
+				transform: rotate(45deg);
+				transition: 0.5s;
+				box-shadow: 0px 0px 0px white;
+			}
+			#header .menuToggle.black::after{
+				background-color: black;
+				box-shadow: 0px 20px 0px black;
+			}
+				#header .menuToggle.active.black::after{
+					box-shadow: 0px 0px 0px black;
+				}
+			#header .menuToggle.active::before{
+				transform: rotate(-45deg);
+				transition: 0.5s;
+			}
+			#header .menuToggle.black::before{
+				background-color: black;
+			}
+		.menuToggle.active{
+			display: flex;
+		}
+		.menuToggle ul{
+			position: absolute;
+			background-color: red;
+			display: flex;
+			width: 300px;
+			height: 700px;
+			top: 0px;
+			right: 0px;
+			flex-direction: column;
+			padding: 70px 0px;
+			margin: 0px;
+			z-index: 1000;
+			transform: translateX(310px) translateY(-50px);
+		transition: 0.5s;
+			background-color: #0000007B;
+    		backdrop-filter: blur(4.5px);
+		}
+		.menuToggle.active ul{
+			transform: translateX(10px) translateY(-13px);
+			transition: 0.5s;
+		}
+			.menuToggle ul li{
+				padding: 30px;
+				list-style: none;
+			}
+				.menuToggle ul li a{
+					text-decoration: none;
+					color: white;
+					font-size: 24px;
+				}
+	}
+	@media (max-width: 660px) {
+		#reservation li{
+			width: 230px;
+		}
+		#hero{
+			padding-bottom: 50px;
+		}
+		#hero div button{
+			margin-top: 30px;
+		}
+		#rooms .rooms-box .rooms-description li {
+		    display: flex;
+		    align-items: center;
+		    margin-bottom: 10px;
+		}
+	}
+	@media (max-width: 530px) {
+		#reservation{
+			padding-bottom: 150px;
+			justify-content: center;
+
+		}
+		#hero.contacto h2{
+			font-size: 35px;
+		}
+		#hero.contacto{
+			margin-bottom: 0px;
+		}
+		#contacto .content-cont{
+			margin-top: 40px;
+		}
+		#coment .coment-base h4{
+			margin: 0px;
+			font-size: 18px;
+			height: auto;
+		}
+		#coment .coment-base div .stars{
+		    width: 90%;
+		    margin: 10px 0px;
+		}
+		#coment .coment-base p{
+			margin-top: 10px;
+		}
+		#reservation button{
+			display: flex;
+			right: auto;
+			left: auto;
+		}
+		#reservation li{
+			width: 80%;
+		}
+		#rooms{
+			padding-left: 7px;
+			padding-right: 7px;
+		}
+
+		#rooms .rooms-box .rooms-description li img{
+			width: 25px;
+		}
+		#coment{
+			padding-left: 7px;
+			padding-right: 7px;
+			justify-content: center;
+			display: flex;
+		}
+		#coment .coment-base div{
+			width: 90%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		#coment .coment-base{
+			margin-left: 0px;
+			margin-right: 0px;
+		}
+		#footer{
+			padding: 10px;
+		}
+		#footer h5 {
+		    font-size: 20px;
+		    color: white;
+		}
+		#footer li a, #footer li span {
+		    color: white;
+		    text-decoration: none;
+		    font-size: 14px;
+		}
+	}
+	@media(max-width: 375px) {
+		#hero div h2{
+			font-size: 18px;
+		}
+		#hero div{
+			width: 300px;
+		}
+		#hero div span{
+			font-size: 13px;
+		}
+		#hero.contacto h2{
+			font-size: 25px;
+		}
+
+		#features h3{
+			font-size: 30px;
+		}
+		#rooms h3{
+			font-size: 30px;
+		}	
+		#coment .coment-base div{
+			margin: 0px;
+		}
+		#coment .coment-base .coment-box{
+			padding: 30px;
+			width: 320px;
+		}
+		#coment h3{
+			font-size: 30px;
+		}
+		#features .features-base .feat-box img{
+			position: relative;
+			left: -10px;
+
+		}
+		#reservation{
+			padding-left: 0px;
+			padding-right: 0px;
+		}
+	}
+	@media(max-width: 338px){
+		#features .content-feat{
+			width: 220px;
+		}
+		#coment .coment-base .coment-box{
+			width: 100%;
+		}
+		#hero div{
+			width: 240px;
+		}
+		#features .features-base .feat-box{
+			min-width: 200px;
+		}
+	}

@@ -1,0 +1,269 @@
+/*Etiquetas globales*/
+	body{
+		margin: 0px;
+		width: 100%;
+		background-color: #0C0C0CFF
+	}
+	.t-white{
+		color: #fff;
+	}
+	.t-red{
+		color: #FF0000FF;
+	}
+/*Header*/
+	#header{
+		position: sticky;
+		background-color: #0C0C0CFF;
+		top: 0px;
+		right: 0px;
+		left: 0px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0px 20px;
+		z-index: 10000;
+	}
+		#header .nav{
+			margin: 0px;
+			}
+			#header .nav ul{
+				display: flex;
+			}
+				#header .nav ul li{
+					list-style: none;
+				}
+					#header .nav ul li a{
+						text-decoration: none;
+						color: #fff;
+						display: block;
+						padding: 12px 17px;
+						font-size: 21px;
+					}
+		#header h2{
+			font-size: 34px;
+		}
+/*Hero*/
+	#hero{
+		width: 100%;
+		height: 600px;
+		text-align: left;
+		background: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0,0,0,0.45)),url("img/singapore.jpg") center/cover no-repeat fixed;
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 100px;
+	}
+		#hero div{
+		padding: 100px;
+			align-items: center;
+			margin-top: auto;
+			margin-bottom: auto;
+			position: relative;
+		}
+				#hero h1{
+					margin-top: 100px;
+					color: #FF0000FF;
+					font-size: 75px;
+					margin: auto;
+				}
+				#hero h2{
+					font-size: 45px;
+					margin-top: 0px;
+
+				}
+					#hero h2 span{
+						color: #FF0000FF;
+					}
+				#hero h3{
+					font-size: 24px;
+				}
+				#hero button{
+					padding: 16px;
+					border: 3px solid #FF0000FF;
+					border-radius: 50px;
+					background-color: #00000051;
+					font-size: 20px;
+					cursor: pointer;
+					position: absolute;
+				}
+					#hero button:hover{
+						padding: 19px;
+						transition: .4s;
+						background-color: #00000087;
+						color: #fff;
+
+					}
+/*Features*/
+	#features{
+		width: 100%;
+		height: 700px;
+		padding: 30px;
+		box-sizing: border-box;
+	}
+		#features .feat-base{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+			#features .feat-base .feat-box{
+				width: 24%;
+				min-width: 200px;
+				height: 180px;
+				background-color: #fff;
+				padding: 30px;
+				position: relative;
+				margin: 10px 0px 70px;
+				box-sizing: border-box;
+			}
+			#features .feat-base .feat-box:hover{
+				height: 430px;
+				transition: 0.5s;
+			}
+				#features .feat-base .feat-box .imgBx{
+					width: 100%;
+					top: -80px;
+					height: 200px;
+					overflow: hidden;
+					transition: 0.5s;
+					transform: scale(1);
+					position: relative;
+				}
+				#features .feat-base .feat-box .content-feat{
+					visibility: hidden;
+					opacity: 0;					
+				}
+				#features .feat-base .feat-box:hover .content-feat{
+					margin-top: -60px;
+					visibility: visible;
+					transition-delay: 0.3s;
+					opacity: 1;
+					padding-bottom: 20px;
+				}
+				#features .feat-base .feat-box .imgBx img{
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+
+				}
+					#features .feat-base .feat-box:hover .imgBx img{
+						transform: scale(1.5);
+						transition: 0.5s;
+					}
+/*Responsive*/
+	@media(max-width: 1130px){
+		#features{
+			height: 750px;
+		}
+		#features .feat-base .feat-box{
+			width: 40%;
+			margin-bottom: 90px;
+		}
+		#features .feat-base .feat-box:hover{
+			height: 350px;
+		}
+
+	}
+	@media(max-width: 885px){
+		#header .nav ul{
+			display: none;
+		}
+		#features .feat-base .feat-box {
+		    width: 45%;
+		    margin: 0px 10px 100px;
+		}
+		#features .feat-base .feat-box:hover .content-feat {
+		    margin-top: -90px;
+		    visibility: visible;
+		    transition-delay: 0.3s;
+		    opacity: 1;
+		}
+	}
+
+	@media(max-width: 700px){
+		#hero h1{
+			font-size: 45px;
+		}
+		#hero h2{
+			font-size: 25px;
+		}
+		#hero h3{
+			font-size: 15px;
+		}
+		#hero button {
+			padding: 9px;
+			font-size: 11px;
+		}
+		#features .feat-base .feat-box {
+		    width: 80%;
+		    margin: 0px 10px 100px;
+		}
+
+	}
+	@media(max-width: 600px) {
+		#hero div {
+			padding: 60px;
+		}
+	}
+	@media(max-width: 480px){
+		#features .feat-base .feat-box {
+		    width: 100%;
+		}
+		#hero div {
+		    padding: 20px;
+		    
+		}
+	}
+	@media(max-width: 400px){
+		#hero{
+			height: 500px;
+		}
+		#hero h1{
+			font-size: 32px;
+		}
+		#hero h2{
+			font-size: 22px;
+		}
+		#hero h3{
+			font-size: 13px;
+		}
+		#hero button{
+			padding: 5px;
+			font-size: 9px;
+			border: 2px solid #FF0000FF;
+		}
+	}
+	@media(max-width: 380px){
+		#features{
+			padding: 30px 0px;
+		}
+		#features .feat-base .feat-box .content-feat p{
+			font-size: 13px;
+		}
+	}
+	@media(max-width: 280px){
+		#features .feat-base .feat-box{
+
+		}
+		#features .feat-base .feat-box .content-feat p{
+			font-size: 11px;
+
+		}
+		#features .feat-base .feat-box:hover{
+			height: 300px;
+		}
+	}
+	@media(max-width: 280px){
+		#hero h1{
+			font-size: 23px;
+		}
+		#hero h2{
+			font-size: 13px;
+		}
+		#hero h3{
+			font-size: 9px;
+		}
+		#hero button{
+			padding: 4px;
+			font-size: 8px;
+		}
+	}
