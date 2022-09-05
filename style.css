@@ -1,0 +1,382 @@
+/*Tags globals*/
+	.whatsapp{
+		width: 50px;
+		height: 50px;
+		background-color: green;
+		position: fixed;
+		bottom: 30px;
+		right: 30px;
+
+	}
+		.whatsapp img{
+			width: 100%;
+			height: 100%;
+		}
+	html{
+		scroll-behavior: smooth;
+	}
+	a{
+		scroll-behavior: smooth;	
+	}
+	body,
+	html{
+		position: relative;
+		height: 100%;
+	}
+	body{
+		background-color: #eee;
+		font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+		color: #000;
+        margin: 0px;
+        padding: 0px;
+	}
+	body section{
+		margin-bottom: 30vh;
+	}
+/*Header*/
+	#header{
+		display: flex;
+		position: fixed;
+		transition: top 0.5s;
+		
+		top: 0px;
+		right: 0px;
+		left: 0px;
+		justify-content: space-between;
+		padding: 10px 10px;
+		height: 70px;
+		box-sizing: border-box;
+		z-index: 1000;
+	}
+
+	 #header h1{
+	 	margin: 0px;
+	 	color: #fff;
+
+	 }
+	 #header .navigation{
+	 	display: flex;
+	 	align-items: center;
+	 }
+	  #header .navigation li{
+	  	list-style: none;
+	  }
+	   #header .navigation li a{
+	   	color: #fff;
+	   	text-decoration: none;
+	   	display: block;
+	   	padding: 10px 20px;
+	   }
+/*Hero*/
+	#hero{
+		height: 100vh;
+		background: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0,0,0,0.45)),url("img/orion-nebula.jpg") top/cover no-repeat fixed;
+		display: flex;
+		align-items: center;
+	
+	}
+	 #hero .container__hero{
+	 	padding: 10px 8vw;
+	 }
+	  #hero h2{
+	 	margin: 5px 0px;
+	 	color: #fff;
+	 	font-size: 5vh;
+	  }
+	  #hero h1{
+	 	color: #fff;
+	 	font-size: 10vh;
+	 	margin: 5px 0px;
+	  }
+	  #hero h3{
+	   	color: #fff;
+	   	font-size: 6vh;
+	   	margin-top: 20px;
+	  }
+	  #hero a{
+	  	background-color: #4800FFFF;
+	  	color: #fff;
+	  	text-decoration: none;
+	  	padding: 15px 25px;
+	  }
+/*aboutme*/
+	#aboutMe{
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+	 	align-items: center;
+	 	padding: 3vw;
+	}
+	 #aboutMe .about{
+	 	display: flex;
+	 	width: 100%;
+	 	margin-top: auto;
+	 	margin-bottom: auto;
+	 }
+	  #aboutMe .about div{
+	  	width: 50%;
+	  	height: auto;
+	  }
+	  #aboutMe .about .content-about{
+	  	padding-left: 20px;
+	  	
+	  }
+	  #aboutMe .about div h3{
+	  	margin-top: 0px;
+	  	font-size: 3vw;
+	  }
+	  #aboutMe .about div p{
+	  	font-size: 1.5vw;
+	  }
+	   #aboutMe .about .img-about{
+	   		display: flex;
+
+	   }
+	    #aboutMe .about img{
+	   		width: 100%;
+	   		height: 100%;
+	   		object-fit: contain;
+	   		top: 0px;
+	    }
+
+
+/*servicios*/
+
+/*repositorios*/
+	#repositorios{
+		height: auto;
+		text-align: center;
+		box-sizing: border-box;
+	}
+	
+		#repositorios .rep-base{
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+			width: 100%;
+			padding-top: 50px;
+			padding-bottom: 50px;
+		}
+		#repositorios .rep-base .rep-box{
+			min-width: 230px;
+			width: 330px;
+			height: auto;
+			position: relative;
+			box-sizing: border-box;
+			background-position: center;
+			background-size: cover;
+			background-color: white;
+			cursor: pointer;
+			margin-bottom: 100px;
+		}
+			#repositorios .rep-base .rep-box:hover{
+				animation: animate 0.5s linear;
+				transition: .2s;
+			}
+			@keyframes animate{
+				
+				25%{
+					transform: rotate(0.5deg);					
+				}
+				50%{
+					transform: rotate(0deg);
+				}
+				75%{
+					transform: rotate(-0.5deg);
+				}
+				100%{
+					transform: rotate(0deg);
+				}
+			}
+			#repositorios .rep-base .rep-box .type{
+				align-items: center;
+				display: flex;
+				justify-content: center;
+				position: relative;
+				padding: 20px;
+				padding-top: 0px;
+			}
+			#repositorios .rep-base .rep-box .type div{
+				width: 100%;
+				height: 34px;
+			}
+				#repositorios .rep-base .rep-box .type button{
+					margin-right: 10px;
+
+				}
+				#repositorios .rep-base .rep-box .type img{
+					position: absolute;
+					width: 34px;
+					height: 34px;
+					right: 20px;
+					top: 0px;
+				}
+
+			#repositorios .rep-base .rep-box .img-box{
+				width: 100%;
+				height: auto;
+				overflow: hidden;
+			}
+				#repositorios .rep-base .rep-box .img-box img{
+					width: 100%;
+					height: 100%;
+				}
+					#repositorios .rep-base .rep-box:hover .img-box img{
+						transform: scale(1.5);
+						transition: 0.5s;
+					}
+					#repositorios .rep-base .rep-box:not(:hover) .img-box img{
+						transform: scale(1);
+						transition: 0.5s;
+					}
+			#repositorios .rep-base .rep-box .content{
+				padding: 20px;
+			}
+
+/*footer*/
+	#footer{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		height: auto;
+		background-color: black;
+		width: 100%;
+	}
+	 #footer h2,
+	 #footer h3{
+	 	color: #fff;
+	 }
+	 #footer .conta-base{
+	 	margin-top: auto;
+	 	margin-bottom: auto;
+	 	display: flex;
+	 	justify-content: space-around;
+	 	text-align: justify;
+
+	 }
+	  #footer .conta-base div{
+	  	margin-bottom: 50px;
+	  }
+	  #footer .conta-base div a{
+	  	color: #fff;
+	  }
+	  #footer .conta-base .cont-info div h4{
+	  	color: #00B2B2FF;
+	  	font-size: 20px;
+	  	margin-bottom: 10px;
+	  }
+	  #footer .conta-base .cont-info div span{
+	  	color: #fff;
+	  }
+	  #footer .conta-base .message{
+	  	width: 50vw;
+	  	height: 100%;
+
+	  }
+	  #footer .conta-base .message form{
+	  	display: flex;
+	  	flex-direction: column;
+	  }
+	  #footer .conta-base .message h4{
+	  	color: #fff;
+	  	font-size: 20px;
+	  	font-weight: 600;
+	  }
+	  #footer form input,
+	  #footer form textarea{
+	  	margin-bottom: 20px;
+	  	border: none;
+	  	outline: none;
+	  	padding: 15px;
+	  	font-size: 16px;
+	  	background-color: #222;
+	  	resize: none;
+	  	color: #fff;
+	  	display: flex;
+	  }
+	  	#footer form input[type="submit"]{
+	  		max-width: 100px;
+	  		background-color: #2196f3;
+	  		text-align: center;
+	  		justify-content: center;
+	  	}
+	   
+
+
+
+
+/*responsive*/
+	@media(max-width: 1000px){
+		 #aboutMe .about div{
+	  	width: 100%;
+	  	height: auto;
+	  }
+		#aboutMe .about {
+		    display: flex;
+		    flex-direction: column;
+		    width: 100%;
+		    align-items: center;
+		}
+		#aboutMe .about div p {
+		    font-size: 2.5vw;
+		}
+		#aboutMe .about div h3 {
+		    margin-top: 0px;
+		    font-size: 4vw;
+		}	
+	}
+	@media(max-width: 820px){
+		#header .navigation{
+			
+		}
+		.menu img{
+			filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(0deg) brightness(100%) contrast(100%);
+			width: 60px;
+			height: 60px;
+		}
+		#hero h1 {
+		    color: #fff;
+		    font-size: 8vw;
+		    margin: 5px 0px;
+		}
+		#hero h3 {
+		    font-size: 4vw;
+
+		}
+		#hero h2{
+			font-size: 5vw;
+		}
+		#footer .conta-base{
+			flex-direction: column;
+			align-items: center;
+		}
+
+		#footer .conta-base .message {
+		    width: 80vw;
+		    height: 100%;
+		    display: flex;
+		    flex-direction: column;
+
+		}
+	}
+	@media(max-width: 681px){
+		#aboutMe .about div p {
+		    font-size: 3.5vw;
+		}
+		#aboutMe .about div h3 {
+		    margin-top: 0px;
+		    font-size: 5vw;
+		}
+	}
+	@media(max-width: 300px){
+		#repositorios .rep-base .rep-box .content p{
+			font-size: 13px;
+		}
+		#repositorios .rep-base .rep-box .type img{
+			width: 28px;
+			height: 28px;
+		}
+		#repositorios .rep-base .rep-box .type button {
+		    font-size: 10px;
+		}
+	}
