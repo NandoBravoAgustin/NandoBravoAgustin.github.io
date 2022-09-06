@@ -48,6 +48,14 @@
 		box-sizing: border-box;
 		z-index: 1000;
 	}
+	#header.sticky{
+		background-color: black;
+
+	}
+	#header.sticky .navigation .menu img{
+		filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(0deg) brightness(100%) contrast(100%);
+
+	}
 
 	 #header h1{
 	 	margin: 0px;
@@ -58,6 +66,66 @@
 	 	display: flex;
 	 	align-items: center;
 	 }
+	 #header .navigation .menu{
+	 	width: 50px;
+	 	height: 50px;
+	 	display: none;
+	 	cursor: pointer;
+	 	position: relative;
+	 	align-items: center;
+	 }
+	  #header .navigation .menu img{
+	  	filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(0deg) brightness(100%) contrast(100%);
+	  }
+	  #header .navigation .menu ul{
+	  	background-color: white;
+	  	display: flex;
+	  	flex-direction: column;
+	  	width: 95vw;
+	  	height: 120vh;
+	  	transform: translateX(100vw);
+	  	position: absolute;
+	  	top: -30px;
+	  	text-align: center;
+	  	transition: 0.5s;
+	  }
+	  #header .navigation .menu.activo ul{
+	  	transform: translateX(-85vw);
+	  	transition: 0.5s;
+	  }
+
+	  #header .navigation .menu::after{
+	  	position: absolute;
+	  	content: '';
+	  	/*background-color: white;*/
+	  	width: 100%;
+	  	height: 8px;
+	  	transform: rotate(90deg);
+	  	transition: 0.5s;
+
+	  }
+	  	#header .navigation .menu.activo::after{
+	  		transform: rotate(45deg);
+	  		background-color: black;
+	  	}
+	  #header .navigation .menu::before{
+	  	position: absolute;
+	  	content: '';
+	  	/*background-color: white;*/
+	  	width: 100%;
+	  	height: 8px;
+	  	transition: 0.5s;
+	  	z-index: 10000;
+	  }
+	  	#header .navigation .menu.activo::before{
+	  		transform: rotate(-45deg);
+	  		background-color: black;
+	  	}
+	  	#header .navigation .menu ul a{
+	  		font-size: 40px;
+	  		margin-top: 100px;
+	  		text-decoration: none;
+	  	}
 	  #header .navigation li{
 	  	list-style: none;
 	  }
@@ -92,16 +160,18 @@
 	   	color: #fff;
 	   	font-size: 6vh;
 	   	margin-top: 20px;
+	   	margin-bottom: 60px;
 	  }
 	  #hero a{
 	  	background-color: #4800FFFF;
 	  	color: #fff;
 	  	text-decoration: none;
 	  	padding: 15px 25px;
+	  	
 	  }
 /*aboutme*/
 	#aboutMe{
-		height: 100vh;
+		height: auto;
 		display: flex;
 		flex-direction: column;
 	 	align-items: center;
@@ -307,10 +377,21 @@
 
 /*responsive*/
 	@media(max-width: 1000px){
+		 .menu img{
+			filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(0deg) brightness(100%) contrast(100%);
+			width: 60px;
+			height: 60px;
+		}
 		 #aboutMe .about div{
-	  	width: 100%;
-	  	height: auto;
-	  }
+		  	width: 100%;
+		  	height: auto;
+		  }
+		  #header .navigation li{
+		  	display: none;
+		  }
+		  #header .navigation .menu{
+		  	display: flex;
+		  }
 		#aboutMe .about {
 		    display: flex;
 		    flex-direction: column;
@@ -367,6 +448,16 @@
 		    margin-top: 0px;
 		    font-size: 5vw;
 		}
+		#hero a {
+		    background-color: #4800FFFF;
+		    color: #fff;
+		    text-decoration: none;
+		    padding: 13px 21px;
+		    font-size: 18px;
+		}
+		#footer h2, #footer h3{
+			padding: 20px;
+		}
 	}
 	@media(max-width: 300px){
 		#repositorios .rep-base .rep-box .content p{
@@ -378,5 +469,11 @@
 		}
 		#repositorios .rep-base .rep-box .type button {
 		    font-size: 10px;
+		}
+		#hero a {
+		    background-color: #4800FFFF;
+		    color: #fff;
+		    text-decoration: none;
+		    padding: 8px 14px;
 		}
 	}
