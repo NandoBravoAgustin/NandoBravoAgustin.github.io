@@ -11,6 +11,16 @@ window.onscroll = function () {
 	}
 	ubicacionPrincipal = desplazamiento;
 }
+const menu = document.querySelector(".menu")
+menu.onclick = function () {
+	menu.classList.toggle("activo")
+}
+window.addEventListener("scroll", function() {
+	var header = document.querySelector("#header");
+	header.classList.toggle("sticky", window.scrollY > 100);
+
+})
+const menuToggle = document.querySelector(".menuToggle");
 	// window.addEventListener('load', function () {
 	// 	console.log('el contenido ha cargado')
 	// 	var imagenes = [];
