@@ -2,7 +2,7 @@
 	body{
 		margin: 0px;
 		width: 100%;
-		background-color: #0C0C0CFF
+		background-color: #000;
 	}
 	.t-white{
 		color: #fff;
@@ -41,13 +41,14 @@
 					}
 		#header h2{
 			font-size: 34px;
+			color: #FFCB00FF
 		}
 /*Hero*/
 	#hero{
 		width: 100%;
-		height: 600px;
+		height: 100vh;
 		text-align: left;
-		background: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0,0,0,0.45)),url("img/singapore.jpg") center/cover no-repeat fixed;
+		background: linear-gradient(rgba(0, 0, 0, 0.45),rgba(0,0,0,0.75)),url("img/singapore.jpg") center/cover no-repeat fixed;
 		align-items: center;
 		display: flex;
 		flex-direction: column;
@@ -62,7 +63,7 @@
 		}
 				#hero h1{
 					margin-top: 100px;
-					color: #FF0000FF;
+					color: #FFCB00FF;
 					font-size: 75px;
 					margin: auto;
 				}
@@ -72,15 +73,14 @@
 
 				}
 					#hero h2 span{
-						color: #FF0000FF;
+						color: #FFCB00FF;
 					}
 				#hero h3{
 					font-size: 24px;
 				}
 				#hero button{
 					padding: 16px;
-					border: 3px solid #FF0000FF;
-					border-radius: 50px;
+					border: 3px solid #FFCB00FF;
 					background-color: #00000051;
 					font-size: 20px;
 					cursor: pointer;
@@ -99,7 +99,14 @@
 		height: 700px;
 		padding: 30px;
 		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
 	}
+		#features h2{
+			color: #FFCB00FF;
+			font-size: 5vh;
+		}
 		#features .feat-base{
 			display: flex;
 			flex-wrap: wrap;
@@ -109,16 +116,25 @@
 				width: 24%;
 				min-width: 200px;
 				height: 180px;
-				background-color: #fff;
+				background-color: #303030FF;
 				padding: 30px;
 				position: relative;
 				margin: 10px 0px 70px;
 				box-sizing: border-box;
+				margin-top: 100px
+			}
+			
+			#features .feat-base .feat-box p{
+				color: #fff;
 			}
 			#features .feat-base .feat-box:hover{
 				height: 430px;
 				transition: 0.5s;
 			}
+			#features .feat-base .feat-box:not(hover){
+				transition: 0.5s;
+			}
+
 				#features .feat-base .feat-box .imgBx{
 					width: 100%;
 					top: -80px;
@@ -127,6 +143,7 @@
 					transition: 0.5s;
 					transform: scale(1);
 					position: relative;
+
 				}
 				#features .feat-base .feat-box .content-feat{
 					visibility: hidden;
@@ -139,6 +156,14 @@
 					opacity: 1;
 					padding-bottom: 20px;
 				}
+					#features .feat-base .feat-box .content-feat h3{
+						color: #FFCB00FF;
+				
+						font-weight: 500;
+					}
+					#features .feat-base .feat-box .content-feat p{
+						color: #AAA;
+					}
 				#features .feat-base .feat-box .imgBx img{
 					width: 100%;
 					height: 100%;
@@ -149,6 +174,76 @@
 						transform: scale(1.5);
 						transition: 0.5s;
 					}
+					#features .feat-base .feat-box:not(:hover) .imgBx img{
+						transition: 0.5s;
+
+					}
+/*Rooms*/
+	#rooms{
+		width: 100%;
+		height: auto;
+	 }
+	 #rooms h2{
+	 	font-size: 40px;
+	 	color: #FFCB00FF;
+	 }
+	 #rooms .room-base{
+		justify-content: center;
+		align-items: center;
+	 	display: flex;
+	 	flex-direction: column;
+	  	width: 100%;
+	  	padding: 10vw;
+	  	box-sizing: border-box;
+	 }
+	  #rooms .room-base .room-box{
+		    display: flex;
+	    	width: 100%;
+		  	flex-direction: row;
+		  	background: #0C0C0CFF;
+		  	margin: 10px 0px;
+		  	position: relative;
+	   }
+	  
+	  		#rooms .room-base .room-box:nth-child(even){
+	  			flex-direction: row-reverse;
+	  		}
+	   #rooms .room-base .room-box .room-img{
+	   	width: 50%;
+	   	height: auto;
+	   	overflow: hidden;
+	    }
+	   		#rooms .room-base .room-box .room-img img{
+	    	width: 100%;
+	    	height: 100%;
+	    	object-fit: cover;
+	   		}
+	   			#rooms .room-base .room-box:hover .room-img img{
+	   				transform: scale(1.5);
+	   				transition: 0.5s;
+	   			}
+	   #rooms .room-base .room-box .room-content{
+	   	width: 50%;
+	   	padding: 20px;
+	   	box-sizing: border-box;
+	   	position: relative;
+	   }
+	    #rooms .room-base .room-box .room-content span{
+	    	color: #FFCB00FF;
+	    	font-size: 30px;
+	    	position: absolute;
+	    	bottom: 20px;
+	    	right: 20px;
+	    }
+	    #rooms .room-base .room-box .room-content h3{
+	    	color: #FFCB00FF;
+	    	font-size: 30px;
+	    }
+	    #rooms .room-base .room-box .room-content p{
+	    	color: #B7B7B7FF;
+	    	margin-bottom: 50px;
+	    }
+
 /*Responsive*/
 	@media(max-width: 1130px){
 		#features{
