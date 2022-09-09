@@ -1,0 +1,339 @@
+/*etiquetas globales*/
+	@font-face{
+		font-family: aboreto;
+		src: url("fonts/Aboreto-Regular.ttf");
+	}
+	@font-face{
+		font-family: nunito;
+		src: url("fonts/Nunito-VariableFont_wght.ttf");
+	}
+	.aboreto{
+		font-family: aboreto;
+	}
+	.nunito{
+		font-family: nunito;
+	}
+	body{
+		margin: 0px;
+		width: 100%;
+	}
+
+/*header*/
+	#header{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 10px 0px 10px 40px;
+		box-sizing: border-box;
+		width: 100%;
+		height: auto;
+		
+	}
+		#header ul{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			box-sizing: border-box;
+		 }
+		#header .menu{
+			display: none;
+			margin-right: 30px;
+		}
+		 	#header ul li{
+		 		display: inline-block;
+		 		position: relative;
+		 	}
+		 		#header ul li a{
+		 			text-decoration: none;
+		 			display: block;
+		 			color: #000000FF;
+		 			margin: 10px 15px;
+		 			font-size: 20px;
+		 			font-family: nunito;
+		 			font-weight: 500;
+		 		}
+		 			#header ul li a.active::after{
+		 				content: '';
+		 				width: 30%;
+		 				height: 3px;
+		 				position: absolute;
+		 				background-color: #000000FF;
+		 				top: 38px;
+		 				display: flex;
+		 			}
+		 			#header ul li a:hover::after{
+		 				content: '';
+		 				width: 30%;
+		 				height: 3px;
+		 				position: absolute;
+		 				background-color: #000000FF;
+		 				top: 38px;
+		 				display: flex;
+		 			}
+		 #header h1{
+		 	font-size: 40px;
+		 	margin: 10px 0px;
+		 	box-sizing: border-box;
+		 	
+		 }
+
+/*home*/
+	#home{
+		background-image: url("img/amenities-5-1.jpg");
+		width: 100%;
+		height: 70vh;
+		background-size: cover;
+	}
+
+/*features*/
+	#features{
+		text-align: center;
+		padding: 4vw 1vw;
+
+	}
+	#features .fea-base{
+		display: flex;
+		box-sizing: border-box;
+	}
+		#features .fea-base .fea-box{
+			width: 25%;
+			height: auto;
+				margin: 20px;
+		}
+		#features .fea-base .fea-box:hover{
+			filter: invert(0%) sepia(0%) saturate(100%) hue-rotate(0deg) brightness(30%) contrast(100%);
+			transition: 0.3s;
+			
+
+		}
+			#features .fea-base .fea-box img{
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+
+/*description*/
+	#description{
+		display: flex;
+		width: 100%;
+		margin-top: 200px;
+	}
+
+		#description .img-des{
+			width: 50%;
+			height: auto;
+			
+		}
+			#description .img-des img{
+				width: 100%;
+				height: auto;
+				
+			}
+		#description div{
+			width: 50%;
+		}
+			#description div p{
+				font-size: 22px;
+				margin-left: 17px;
+			}
+
+/*habitaciones*/
+	#rooms{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+		#rooms h3{
+			font-size: 30px;
+		}
+		#rooms .ro-base{
+			display: grid;
+			text-align: center;
+			grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
+		}
+			#rooms .ro-base .ro-box{
+				height: 350px;
+				width: 400px;
+				background-color: #EFEFEFFF;
+				margin: 20px 20px;
+				overflow: hidden;
+
+			}
+				#rooms .ro-base .ro-box img{
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+
+				}
+				
+
+/*footer*/
+	#footer{
+		background-color: #EAEAEAFF;
+	}
+	#footer .columns-footer{
+		display: flex;
+		justify-content: space-between;
+	}
+	#footer .columns-footer h2{
+		background-color: #fff;
+		height: 30px;
+		padding: 10px;
+	}
+		#footer .columns-footer .col-foo li{
+			list-style: none;
+			line-height: 35px;
+		}
+		#footer .columns-footer .col-foo p{
+			color: #000000FF;
+			font-family: nunito;
+			font-weight: 600;
+			justify-content: flex-start;
+		}
+		#footer .columns-footer .col-foo li a{
+			color: #AFAFAFFF;
+			font-family: nunito;
+			text-decoration: none;
+		}
+		#footer .columns-footer .col-foo li a:hover{
+			color: #000000FF;
+		}
+		#footer .conectate{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		#footer .logo img{
+			width: 25px;
+			height: 25px;
+			margin: 20px 3px;
+			border: 1px #000000FF solid;
+			padding: 10px;
+		}
+		#footer p{
+			display: flex;
+			justify-content: center;
+			margin-bottom: 0px;
+		}
+		#footer .conectate a img:hover{
+			filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(0deg) brightness(100%) contrast(100%);
+			background-color: white;
+		}
+
+
+
+/*responsive*/
+	
+	@media(max-width: 1030px){
+		#header .menu{
+			width: 50px;
+			height: 50px;
+			display: initial;
+			position: relative;
+			cursor: pointer;
+		}
+			#header .menu img{
+				width: 50px;
+				height: 50px;
+			}
+		#header .menu.menu-active::after{
+			content: '';
+			width: 45px;
+			height: 4px;
+			display: flex;
+			position: absolute;
+		}
+		#header .cruz{
+			position: relative;
+			width: 40px;
+			height: 40px;
+			align-items: center;
+			cursor: pointer;
+
+		}
+			#header .cruz::after{
+				content: '';
+				width: 100%;
+				height: 4px;
+				background-color: #000000FF;
+				position: absolute;
+				transform: rotate(45deg);
+				right: 30px;
+			}
+			#header .cruz::before{
+				content: '';
+				width: 100%;
+				height: 4px;
+				background-color: #000000FF;
+				position: absolute;
+				transform: rotate(-45deg);
+				right: 30px;
+
+			}
+		#header ul{
+			display: flex;
+			flex-direction: column;
+			position: fixed;
+			right: -300px;
+			top: 0px;
+			background-color: white;
+			margin: 0px;
+			padding: 3vw 5vw 3vw 4vw;
+			width: 200px;
+			height: 800px;
+			justify-content: flex-start;
+			align-items: flex-start;
+			z-index: 10000;
+			box-sizing: content-box;
+			transition: 0.5s;
+		}
+		#header ul.activo.ul-menu{
+			right: 0px;
+		}
+		#header ul li a{
+			display: flex;
+			justify-content: flex-start;
+			padding-top: 40px;
+			position: relative;
+		}
+		#header ul li a.active::after{
+		 	content: '';
+		 	width: 50%;
+		 	height: 3px;
+		 	position: absolute;
+		 	background-color: #000000FF;
+		 	top: 68px;
+		 	display: flex;
+		 }
+		 #header ul li a:hover::after{
+		 	content: '';
+		 	width: 50%;
+		 	height: 3px;
+		 	position: absolute;
+		 	background-color: #000000FF;
+		 	top: 68px;
+		 	display: flex;
+		 }
+	}
+	@media(max-width: 820px){
+		#features .fea-base .fea-box:nth-child(2) h3::after {
+		    content: "WIFI 24/7";
+		    color: #fff;
+		    position: absolute;
+		    left: 85px;
+		    z-index: 10;
+		    top: -2px;
+		}
+		#features .fea-base .fea-box:nth-child(1) h3::after {
+		    content: "PLAYA";
+		    color: #fff;
+		    position: absolute;
+		    left: 110px;
+		    z-index: 10;
+		    top: -2px;
+		}
+		#features .fea-base .fea-box:nth-child(3){
+			display: flex;
+			align-items: center;
+		}
+	}
