@@ -1,3 +1,8 @@
+/*colors*/
+	:root{
+		--black: #191919FF;
+		--white: #fff;
+	}
 /*Tags globals*/
 	.whatsapp{
 		width: 50px;
@@ -204,12 +209,18 @@
 	  	padding-left: 20px;
 	  	
 	  }
+	  	#aboutMe .about .content-about p{
+	  		font-size: 23px;
+	  	}
+	  #aboutMe h2{
+	  	font-size: 35px;
+	  }
 	  #aboutMe .about div h3{
 	  	margin-top: 0px;
-	  	font-size: 3vw;
+	  	font-size: 30px;
 	  }
 	  #aboutMe .about div p{
-	  	font-size: 1.5vw;
+	  	font-size: 15px;
 	  }
 	   #aboutMe .about .img-about{
 	   		display: flex;
@@ -221,10 +232,78 @@
 	   		object-fit: contain;
 	   		top: 0px;
 	    }
-
-
 /*servicios*/
-
+	#services{
+		height: auto;
+		background-color: var(--black);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}	
+		#services h2{
+			color: var(--white);
+			font-size: 33px;
+		}
+		#services .serv__base{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			padding: 80px 30px;
+		}
+			#services .serv__base .serv__box{
+				width: 30%;
+				height: 40%;
+				text-align: center;
+				margin: 20px;
+				padding: 30px;
+				box-sizing: border-box;
+				overflow: hidden;
+			}
+				
+					#services .serv__base .serv__box .serv__img img{
+						width: 100px;
+						height: 100px;
+						object-fit: cover;
+						filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(0deg) brightness(100%) contrast(100%);
+					}
+					
+				#services .serv__base .serv__box .serv__content h3,
+				#services .serv__base .serv__box .serv__content span{
+					color: var(--white);
+					font-size: 20px;
+				}	
+				#services .serv__base .serv__box .serv__content h3{
+					font-size: 24px;
+				}
+		@media(max-width: 880px){
+			#services .serv__base .serv__box{
+				width: 40%;
+				padding: 10px;
+			}
+		}
+		@media(max-width: 620px){
+			#services .serv__base .serv__box{
+				width: 90%;
+			}
+			#services .serv__base .serv__box .serv__img img{
+				width: 60px;
+				height: 60px;
+			}
+			#services .serv__base{
+				padding: 10px;
+			}
+			#services .serv__base .serv__box .serv__content span{
+				font-size: 15px;
+			}
+			#services .serv__base .serv__box .serv__content h3{
+				font-size: 20px;
+			}
+		}
+		@media(max-width: 450px){
+			#services h2{
+				font-size: 25px;
+			}
+		}
 /*repositorios*/
 	#repositorios{
 		height: auto;
@@ -460,11 +539,11 @@
 		    font-size: 4vh;
 		}
 		#aboutMe .about div p {
-		    font-size: 3.5vw;
+		    font-size: 15px;
 		}
 		#aboutMe .about div h3 {
 		    margin-top: 0px;
-		    font-size: 5vw;
+		    font-size: 30px;
 		}
 		#hero a {
 		    background-color: #4800FFFF;
@@ -489,6 +568,12 @@
 		}
 		#hero h2{
 			font-size: 2vh;
+		}
+		#aboutMe .about .content-about p{
+			font-size: 16px;
+		}
+		#aboutMe .about div h3{
+			font-size: 25px;
 		}
 	}
 	@media(max-width: 300px){
