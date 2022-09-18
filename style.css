@@ -2,20 +2,32 @@
 	:root{
 		--black: #191919FF;
 		--white: #fff;
+		--grey: #E0E0E0FF;
 	}
 /*Tags globals*/
 	.whatsapp{
 		width: 50px;
 		height: 50px;
-		background-color: green;
+		background-color: #25D366;
 		position: fixed;
 		bottom: 30px;
 		right: 30px;
-
+		z-index: 10000000000;
+		border-radius: 10%;
+		padding: 5px;
+		box-sizing: border-box;
+		transform: translateX(100px);
+		transition: 0.5s;
+	}
+	.whatsapp.active{
+		transform: translateX(0px);
+		transition: 0.5s;
 	}
 		.whatsapp img{
 			width: 100%;
 			height: 100%;
+			filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(0deg) brightness(100%) contrast(100%);
+
 		}
 	html{
 		scroll-behavior: smooth;
@@ -38,6 +50,7 @@
 	body section{
 		margin-bottom: 30vh;
 	}
+	
 /*Header*/
 	#header{
 		display: flex;
@@ -105,6 +118,11 @@
 	  	color: #fff;
 	  	display: inline;
 	  	font-size: 5vw;
+	  }
+	  #header .navigation li a:hover{
+	  	background-color: white;
+	  	color: black;
+	  	transition: all .5s;
 	  }
 	  #header .navigation .menu.activo ul{
 	  	transform: translateX(-300px);
@@ -181,7 +199,7 @@
 	   	margin-bottom: 60px;
 	  }
 	  #hero a{
-	  	background-color: #4800FFFF;
+	  	background-color: #7F007BFF;
 	  	color: #fff;
 	  	text-decoration: none;
 	  	padding: 15px 25px;
@@ -394,7 +412,135 @@
 			#repositorios .rep-base .rep-box .content{
 				padding: 20px;
 			}
+/*blog*/
+	#blog{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+	#blog h2{
+		font-size: 25px;
+	}
+	#blog .blog__base{
+		display: flex;
+		flex-direction: column;
+		padding: 0px 100px;
+	}
+	#blog .blog__base__box{
+		background-color: var(--grey);
+		display: flex;
+		flex-direction: row;
+		margin-top: 90px; 
+		position: relative;
+		z-index: 100;
+	}
+		#blog .blog__base__box:hover img{
+			display: flex;
+			transform: scale(1.5);
+			transition: 0.5s;
+			cursor: pointer;
+			position: cover;
+		}
+		#blog .blog__base__box:not(:hover) img{
+			transition: 0.5s;
+		}
+		#blog .blog__base__box h3{
+			color: var(--grey);
+			font-size: 60px;
+			position: absolute;
+			top: -110px;
+			z-index: -1;
+		}
+	#blog .blog__box__img{
+		width: 30%;
+		height: auto;
+		overflow: hidden;
+	}
+		#blog .blog__box__img img{
+			width: 100%;
+			height: 100%;
+			object-fit: unset;
 
+		}
+	#blog .blog__box__content{
+		padding: 30px;
+	}
+	#blog .blog__box__content h4{
+			text-align: start;
+	}
+	#blog .blog__box__content li{
+			text-align: start;
+	}
+	@media (max-width: 1000px) {
+		#blog .blog__base{
+			padding: 0px 30px;
+		}
+		#blog .blog__box__content h4{
+			font-size: 20px;
+		}
+		#blog .blog__box__content li{
+			font-size: 15px;
+			text-align: start;
+		}
+		#blog .blog__box__img img{
+			object-fit: cover;
+		}
+	}
+	@media (max-width: 900px){
+		#blog .blog__box__content li{
+			font-size: 13px;
+		}
+	}
+	@media (max-width: 800px){
+		#blog .blog__base__box{
+			flex-direction: column;
+		}
+		#blog .blog__box__img{
+			width: 100%;
+			height: 300px;
+		}
+		#blog .blog__box__content{
+			text-align: flex-start;
+		}
+		#blog .blog__box__content ul{
+			padding: 0px 20px;
+		}
+	}
+	@media(max-width: 600px){
+		#blog .blog__box__img img{
+			object-fit: unset;
+		}
+		#blog .blog__box__content{
+			padding: 15px;
+		}
+	}
+	@media(max-width: 450px){
+		#blog .blog__box__img{
+			width: 100%;
+			height: 200px;
+		}
+		#blog .blog__box__content li{
+			font-size: 11px;
+		}
+		#blog .blog__box__content h4{
+			font-size: 15px;
+		}
+	}
+	@media(max-width: 400px){
+		#blog .blog__base{
+			padding: 0px 10px;
+		}
+		#blog .blog__box__img{
+			width: 100%;
+			height: 150px;
+		}
+		#blog .blog__box__content{
+			padding: 15px 5px 15px 3px;
+		}
+		#blog .blog__box__content h4{
+			margin-left: 10px;
+		}
+	}
 /*footer*/
 	#footer{
 		display: flex;
@@ -546,7 +692,6 @@
 		    font-size: 30px;
 		}
 		#hero a {
-		    background-color: #4800FFFF;
 		    color: #fff;
 		    text-decoration: none;
 		    padding: 13px 21px;
