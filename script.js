@@ -3,10 +3,11 @@ window.onscroll = function () {
 	let desplazamiento = window.pageYOffset;
 	if (ubicacionPrincipal >= desplazamiento) {
 		document.getElementById('header').style.top =  "0";
-		
+		document.querySelector(".whatsapp").classList.add("active");
 	} 
 	else{
-		document.getElementById("header").style.top = "-100px"
+		document.getElementById("header").style.top = "-100px";
+		document.querySelector(".whatsapp").classList.remove("active");
 
 	}
 	ubicacionPrincipal = desplazamiento;
