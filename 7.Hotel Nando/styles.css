@@ -35,7 +35,9 @@
 		box-sizing: border-box;
 		width: 100%;
 		height: auto;
-		
+		background-color: transparent;
+		position: fixed;
+		z-index: 100000000000;
 	}
 		#header ul{
 			display: flex;
@@ -54,18 +56,18 @@
 		 		#header ul li a{
 		 			text-decoration: none;
 		 			display: block;
-		 			color: #000000FF;
+		 			color: var(--white);
 		 			margin: 10px 15px;
-		 			font-size: 20px;
+		 			font-size: 22px;
 		 			font-family: nunito;
-		 			font-weight: 500;
+		 			font-weight: 700;
 		 		}
 		 			#header ul li a.active::after{
 		 				content: '';
 		 				width: 30%;
 		 				height: 3px;
 		 				position: absolute;
-		 				background-color: #000000FF;
+		 				background-color: var(--white);
 		 				top: 38px;
 		 				display: flex;
 		 			}
@@ -74,7 +76,7 @@
 		 				width: 30%;
 		 				height: 3px;
 		 				position: absolute;
-		 				background-color: #000000FF;
+		 				background-color: var(--white);
 		 				top: 38px;
 		 				display: flex;
 		 			}
@@ -82,17 +84,74 @@
 		 	font-size: 40px;
 		 	margin: 10px 0px;
 		 	box-sizing: border-box;
+		 	color: var(--white);
 		 	
 		 }
 
 /*home*/
 	#home{
-		background-image: url("img/amenities-5-1.jpg");
+		background: linear-gradient(rgba(0, 0, 0, 0.65),rgba(0,0,0,0.35)),url("img/hero.jpg") center/cover no-repeat fixed;
 		width: 100%;
-		height: 70vh;
+		height: 100vh;
 		background-size: cover;
+		padding: 80px;
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
 	}
+	#home .home__base{
+		align-items: center;
+		margin-top: auto;
+		margin-bottom: auto;
+		width: 70%;
+		
+	}
+	#home .home__base h2,
+	#home .home__base span{
+		color: var(--white);
+	}
+	#home .home__base h2{
+		font-size: 80px;
+	}
+	#home .home__base span{
+		font-size: 30px;
+	}
+	@media(max-width: 800px){
+		#home .home__base span{
+			font-size: 25px;
+		}
+		#home .home__base h2{
+			font-size: 60px;
+		}
+	}
+	@media(max-width: 570px){
+		#home{
+			padding: 80px 30px;
+		}
+		#home .home__base{
+			width: 100%;
+		}
+	}
+	@media(max-width: 517px){
+		#home .home__base span{
+			font-size: 18px;
+		}
+		#home .home__base h2{
+			font-size: 44px;
+		}
 
+	}
+	@media(max-width: 400px){
+		#home{
+			padding: 80px 10px 80px 15px;
+		}
+		#header{
+			padding: 10px;
+		}
+		#header .menu{
+			margin-right: 10px;
+		}
+	}
 /*reservation*/
 	#reservation{
 		display: flex;
@@ -130,11 +189,12 @@
 			width: 100%;
 		}
 		#reservation .res__base{
-			top: -200px;
+			top: -100px;
 			width: 50%;
 		}
 		#reservation .res__base .res__form{
 			flex-direction: column;
+
 		}
 		#reservation .res__base .res__form input{
 			margin-top: 20px;
@@ -178,9 +238,9 @@
 		#rooms .ro__box{
 			margin: 5vh 0px;
 			display: flex;
-			background-color: var(--grey);
 			padding: 5px;
 			position: relative;
+
 		}
 		#rooms .ro__box__img{
 			width: 40%
@@ -199,20 +259,41 @@
 				font-size: 35px;
 				margin-top: 0px;
 				font-weight: 400;
+				text-decoration: underline;
+				text-decoration-color: #004DFFFF;
+				text-decoration-style: solid;
+			}
+			#rooms .ro__box__content li{
+				list-style: none;
+				font-size: 20px;
+				color: #004DFFFF;
 			}
 			#rooms .ro__box__content p{
 				font-size: 20px;
 			}
+			#rooms .cost{
+				position: relative;
+				bottom: 0px;
+				right: 0px;
+				display: flex;
+				align-items: center;
+			}
+				#rooms .cost h5{
+					font-size: 25px;
+					background-color: #91B2FFFF;
+					margin: 0px;
+					padding: 20px; 
+				}
+
 			#rooms .ro__box button{
 				background-color: var(--white);
 				padding: 14px 20px;
 				font-size: 25px;
-				position: absolute;
 				color: var(--black);
 				bottom: 0px;
 				right: 0px;
 				margin: 20px;
-				border: 3px solid var(--white);
+				border: 3px solid var(--black);
 				cursor: pointer;
 				transition: .5s;
 			}
@@ -227,7 +308,6 @@
 		#rooms .ro__box{
 			margin: 5vh 0px;
 			display: flex;
-			background-color: var(--grey);
 			padding: 5px;
 			position: relative;
 			flex-direction: column;
@@ -241,9 +321,12 @@
 		#rooms .ro__box__content h4{
 			margin-top: 30px;
 		}
-		#rooms .ro__box button{
+		#rooms .ro__box .cost{
 			position: relative;
 			float: right;
+		}
+		#rooms .ro__box .cost h5{
+			font-size: 17px;
 		}
 
 		#rooms .ro__box__img{
@@ -251,7 +334,50 @@
 			height: 400px;
 			}
 	}			
-
+	@media (max-width: 500px){
+		#rooms .ro__base{
+			padding: 30px 10px;
+		}
+		#rooms .ro__box__content{
+			padding: 0px 5px;
+		}
+		#rooms .ro__box button{
+			font-size: 19px;
+			padding: 10px 15px;
+		}
+		#rooms .ro__box .cost h5{
+			font-size: 18px;
+			padding: 15px
+		}
+		#rooms .ro__box__content h4{
+			font-size: 25px;
+		}
+	}
+	@media (max-width: 410px){
+		#rooms .ro__box .cost h5{
+			font-size: 14px;
+			
+		}
+	}
+	@media (max-width: 330px){
+		#rooms .ro__base{
+			padding: 30px 2px;
+		}
+		#rooms .ro__box .cost h5{
+			font-size: 11px;
+		}
+		#rooms .ro__box button{
+			font-size: 15px;
+			padding: 6px 10px;
+		}
+	}
+	@media(max-width: 270px){
+		
+		#rooms .ro__box .cost h5{
+			font-size: 13px;
+			padding: 6px 6px;
+		}
+	}
 /*footer*/
 	#footer{
 		background-color: #EAEAEAFF;
@@ -320,7 +446,12 @@
 			#header .menu img{
 				width: 50px;
 				height: 50px;
+				filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(0deg) brightness(100%) contrast(100%);
+
 			}
+		#header ul.activo.ul-menu li a{
+			color: black;
+		}
 		#header .menu.menu-active::after{
 			content: '';
 			width: 45px;
@@ -440,6 +571,10 @@
 		#footer > div.columns-footer{
 			display: flex;
 			flex-direction: column;
-			padding: 30px 50px;
+			padding: 30px 30px;
+		}
+		#footer p.version{
+			margin: 0px 20px;
+			text-align: center; 
 		}
 	}
