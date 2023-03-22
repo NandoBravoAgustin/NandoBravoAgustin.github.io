@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="lib/swiperjs/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="lib/font-awesome/all.min.css">
+</head>
+<body>
+	<header>
+		<div class="group">
+			<a href="" class="logo">Logo</a>
+			<ul class="navigation" id="navigation">
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="shop.html">Tienda</a></li>
+				<li><a href="detalle.html">Detalles</a></li>
+				<li><a href="#">Mas</a></li>
+			</ul>
+			
+		</div>
+		<div class="group">
+			<div class="search">
+				<span class="icon"><img src="icons/search.svg" class="searchBtn" id="searchBtn"></span>
+
+				<span class="icon"><img src="icons/close.svg" class="closeBtn" id="closeBtn"></span>
+				<span class="icon" id="cartBtn" class="cartBtn"><img src="icons/cart.svg"></span>
+				<div class="div-menuToggle active" id="div-menuToggle">
+					<span class="menuToggle" id="menuToggle"></span>
+				</div>
+			</div>
+		</div>
+		<div class="searchBox" id="searchBox" >
+			<input type="text" placeholder="Search here . . .">
+		</div>
+	</header>
+	<div class="div-categorias" id="div-categorias">
+		<div class="cat">
+			<div class="box-cat">
+				<p>Categorias</p>
+				<span class="icon-cat"><img src="icons/flecha-abajo.svg" alt=""></span>
+			</div>
+		</div>
+	</div>
+	<div id="page" class="site" style="z-index: 10000; background-color: #fff;">
+		<nav>
+			<ul>
+				<li class="active"><a href=""><img src="icons/home.svg" alt=""></a></li>
+				<li><a href=""><img src="icons/services.svg" alt=""></a></li>
+				<li><a href=""><img src="icons/shop.svg" alt=""></a></li>
+				<li class="active"><a href=""><img src="icons/notifications.svg" alt=""></a></li>
+				<li><a href=""><img src="icons/person.svg" alt=""></a></li>
+			</ul>
+		</nav>
+	</div>
+	<main>
+		<div class="div-hero">
+			<div class="swiper mySwiper">
+			    <div class="swiper-wrapper">
+			      <div class="swiper-slide"><img src="img/slider0.jpg" alt="">
+			      	<div class="swiper-content">
+			      		<h4>Come and Get it!</h4>
+			      		<h3>BRAND NEW SHOES </h3>
+			      		<button>Comprar ahora</button>
+			      	</div>
+			      </div>
+			      <div class="swiper-slide"><img src="img/slider2.jpg" alt="">
+			      	<div class="swiper-content">
+			      		<h4>Come and Get it!</h4>
+			      		<h3>BRAND NEW SHOES </h3>
+			      		<button>Comprar ahora</button>
+			      	</div>
+			      </div>
+			    </div>
+	    		<div class="swiper-pagination"></div>
+			</div>
+			<div class="mins-hero">
+				<div class="box-min-hero"><img src="img/b18.jpg" alt=""></div>
+				<div class="box-min-hero"><img src="img/b4.jpg" alt=""></div>
+			</div>
+		</div>
+
+		<div class="trending">
+			<div class="container">
+				<div class="wrapper">
+					<div class="sectop flexitem">
+						<h2><span class="circle">Productos en Tendencias</span></h2>
+					</div>
+					<div class="column">
+						<div class="flexrap">
+							<div class="row products big"><!-- !!!!!!!!!!!!!!!!! -->
+								<div class="item">
+									<div class="offer">
+										<p>Offer ends at</p>
+										<ul class="flexcenter">
+											<li>01</li>
+											<li>15</li>
+											<li>27</li>
+											<li>60</li>
+										</ul>
+									</div>
+									<div class="media">
+										<div class="image">
+											<a href="">
+												<img src="img/products/apparel4.jpg" alt="">
+											</a>
+										</div>
+
+										<div class="hoverable">
+											<ul>
+												<li class="active" ><a href="" class="icon"><img src="icons/heart.svg" alt=""></a></li>
+												
+												<li class="cart"><a href="" class="icon"><img src="icons/cart.svg" alt=""></a></li>
+											</ul>
+										</div>
+										<div class="discount circle flexcenter"></div>
+									</div>
+									<div class="content">
+										<div class="rating">
+											<div class="stars big">
+												<img src="icons/star.svg" alt="">
+												<img src="icons/star.svg" alt="">
+												<img src="icons/star.svg" alt="">
+												<img src="icons/star.svg" alt="">
+												<img src="icons/star.svg" alt="">
+											</div>
+											<span class="mini-text">(2.548)</span>
+										</div>
+										<h3 class="main-links"><a href="">happy sailed womens summer boho floral</a></h3>
+										<div class="price">
+											<span class="current">$129.99</span>
+											<span class="normal mini-text">$189.98</span>
+										</div>
+										<div class="stock mini-text">
+											<div class="qty">
+												<span>Stock: <strong class="qty-available">107</strong></span>
+												<span>Sold: <strong class="qty-available">3,459</strong></span>
+											</div>
+											<div class="bar">
+												<div class="available"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row products mini">
+								<div class="item">
+									<div class="media">
+										<div class="image">
+											<a href="">
+												<img src="img/products/apparel3.jpg" alt="">
+											</a>
+										</div>
+
+										<div class="hoverable">
+											<ul>
+												<li class="active" ><a href="" class="icon"><img src="icons/heart.svg" alt=""></a></li>
+												
+												<li class="cart"><a href="" class="icon"><img src="icons/cart.svg" alt=""></a></li>
+											</ul>
+										</div>
+										<div class="discount circle flexcenter"></div>
+									</div>
+									<div class="content">
+										<h3 class="main-links"><a href="">Men slip on shoes casual with</a></h3>
+										<div class="rating">
+											<div class="stars">
+												<img src="icons/star.svg" alt="">
+												<img src="icons/star.svg" alt="">
+												<img src="icons/star.svg" alt="">
+												<img src="icons/star.svg" alt="">
+												<img src="icons/star.svg" alt="">
+											</div>
+											<span class="mini-text">(2.548)</span>
+										</div>
+										<div class="price">
+											<span class="current">$129.99</span>
+											<span class="normal mini-text">$189.98</span>
+										</div>
+										<div class="mini-text">
+											<p>2975 sold</p>
+											<p>free shiping</p>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="media">
+										<div class="image">
+											<a href="">
+												<img src="img/products/apparel1.jpg" alt="">
+											</a>
+										</div>
+
+										<div class="hoverable">
+											<ul>
+												<li class="active" ><a href="" class="icon"><img src="icons/heart.svg" alt=""></a></li>
+												
+												<li class="cart"><a href="" class="icon"><img src="icons/cart.svg" alt=""></a></li>
+											</ul>
+										</div>
+										<div class="discount circle flexcenter"></div>
+									</div>
+									<div class="content">
+										<h3 class="main-links"><a href="">Men slip on shoes casual with</a></h3>
+										<div class="rating">
+											<div class="stars">
+												<img src="icons/star.svg" alt="">
+												<img src="icons/star.svg" alt="">
+												<img src="icons/star.svg" alt="">
+												<img src="icons/star.svg" alt="">
+												<img src="icons/star.svg" alt="">
+											</div>
+											<span class="mini-text">(2.548)</span>
+										</div>
+										<div class="price">
+											<span class="current">$129.99</span>
+											<span class="normal mini-text">$189.98</span>
+										</div>
+										<div class="mini-text">
+											<p>2975 sold</p>
+											<p>free shiping</p>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="media">
+										<div class="image">
+											<a href="">
+												<img src="img/products/home1.jpg" alt="">
+											</a>
+										</div>
+
+										<div class="hoverable">
+											<ul>
+												<li class="active" ><a href="" class="icon"><img src="icons/heart.svg" alt=""></a></li>
+												
+												<li class="cart"><a href="" class="icon"><img src="icons/cart.svg" alt=""></a></li>
+											</ul>
+										</div>
+										<div class="discount circle flexcenter"></div>
+									</div>
+									<div class="content">
+										<h3 class="main-links"><a href="">Men slip on shoes casual with</a></h3>
+										<div class="rating">
+											<div class="stars">
+												<img src="icons/star.svg" alt="">
+												<img src="icons/star.svg" alt="">
+												<img src="icons/star.svg" alt="">
+												<img src="icons/star.svg" alt="">
+												<img src="icons/star.svg" alt="">
+											</div>
+											<span class="mini-text">(2.548)</span>
+										</div>
+										<div class="price">
+											<span class="current">$129.99</span>
+											<span class="normal mini-text">$189.98</span>
+										</div>
+										<div class="mini-text">
+											<p>2975 sold</p>
+											<p>free shiping</p>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="media">
+										<div class="image">
+											<a href="">
+												<img src="img/products/electronic3.jpg" alt="">
+											</a>
+										</div>
+
+										<div class="hoverable">
+											<ul>
+												<li class="active" ><a href="" class="icon"><img src="icons/heart.svg" alt=""></a></li>
+												
+												<li class="cart"><a href="" class="icon"><img src="icons/cart.svg" alt=""></a></li>
+											</ul>
+										</div>
+										<div class="discount circle flexcenter"></div>
+									</div>
+									<div class="content">
+										<h3 class="main-links"><a href="">Men slip on shoes casual with</a></h3>
+										<div class="rating">
+											<div class="stars">
+												<img src="icons/star.svg" alt="">
+												<img src="icons/star.svg" alt="">
+												<img src="icons/star.svg" alt="">
+												<img src="icons/star.svg" alt="">
+												<img src="icons/star.svg" alt="">
+											</div>
+											<span class="mini-text">(2.548)</span>
+										</div>
+										<div class="price">
+											<span class="current">$129.99</span>
+											<span class="normal mini-text">$189.98</span>
+										</div>
+										<div class="mini-text">
+											<p>2975 sold</p>
+											<p>free shiping</p>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+							<div class="row products mini">
+								<div class="item">
+									<div class="media">
+										<div class="image">
+											<a href="">
+												<img src="img/products/shoe1.jpg" alt="">
+											</a>
+										</div>
+
+										<div class="hoverable">
+											<ul>
+												<li class="active" ><a href="" class="icon"><img src="icons/heart.svg" alt=""></a></li>
+												
+												<li class="cart"><a href="" class="icon"><img src="icons/cart.svg" alt=""></a></li>
+											</ul>
+										</div>
+										<div class="discount circle flexcenter"></div>
+									</div>
+									<div class="content">
+										<h3 class="main-links"><a href="">Men slip on shoes casual with</a></h3>
+										<div class="rating">
+											<div class="stars">
+												<img src="icons/star.svg" alt="">
+												<img src="icons/star.svg" alt="">
+												<img src="icons/star.svg" alt="">
+												<img src="icons/star.svg" alt="">
+												<img src="icons/star.svg" alt="">
+											</div>
+											<span class="mini-text">(2.548)</span>
+										</div>
+										<div class="price">
+											<span class="current">$129.99</span>
+											<span class="normal mini-text">$189.98</span>
+										</div>
+										<div class="mini-text">
+											<p>2975 sold</p>
+											<p>free shiping</p>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="media">
+										<div class="image">
+											<a href="">
+												<img src="img/products/apparel2.jpg" alt="">
+											</a>
+										</div>
+
+										<div class="hoverable">
+											<ul>
+												<li class="active" ><a href="" class="icon"><img src="icons/heart.svg" alt=""></a></li>
+												
+												<li class="cart"><a href="" class="icon"><img src="icons/cart.svg" alt=""></a></li>
+											</ul>
+										</div>
+										<div class="discount circle flexcenter"></div>
+									</div>
+									<div class="content">
+										<h3 class="main-links"><a href="">Men slip on shoes casual with</a></h3>
+										<div class="rating">
+											<div class="stars">
+												<img src="icons/star.svg" alt="">
+												<img src="icons/star.svg" alt="">
+												<img src="icons/star.svg" alt="">
+												<img src="icons/star.svg" alt="">
+												<img src="icons/star.svg" alt="">
+											</div>
+											<span class="mini-text">(2.548)</span>
+										</div>
+										<div class="price">
+											<span class="current">$129.99</span>
+											<span class="normal mini-text">$189.98</span>
+										</div>
+										<div class="mini-text">
+											<p>2975 sold</p>
+											<p>free shiping</p>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="media">
+										<div class="image">
+											<a href="">
+												<img src="img/products/home2.jpg" alt="">
+											</a>
+										</div>
+
+										<div class="hoverable">
+											<ul>
+												<li class="active" ><a href="" class="icon"><img src="icons/heart.svg" alt=""></a></li>
+												
+												<li class="cart"><a href="" class="icon cart"><img src="icons/cart.svg" alt=""></a></li>
+											</ul>
+										</div>
+										<div class="discount circle flexcenter"></div>
+									</div>
+									<div class="content">
+										<h3 class="main-links"><a href="">Men slip on shoes casual with</a></h3>
+										<div class="rating">
+											<div class="stars">
+												<img src="icons/star.svg" alt="">
+												<img src="icons/star.svg" alt="">
+												<img src="icons/star.svg" alt="">
+												<img src="icons/star.svg" alt="">
+												<img src="icons/star.svg" alt="">
+											</div>
+											<span class="mini-text">(2.548)</span>
+										</div>
+										<div class="price">
+											<span class="current">$129.99</span>
+											<span class="normal mini-text">$189.98</span>
+										</div>
+										<div class="mini-text">
+											<p>2975 sold</p>
+											<p>free shiping</p>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="media">
+										<div class="image">
+											<a href="">
+												<img src="img/products/home3.jpg" alt="">
+											</a>
+										</div>
+
+										<div class="hoverable">
+											<ul>
+												<li class="active" ><a href="" class="icon"><img src="icons/heart.svg" alt=""></a></li>
+												
+												<li class="cart"><a href="" class="icon"><img src="icons/cart.svg" alt=""></a></li>
+											</ul>
+										</div>
+										<div class="discount circle flexcenter"></div>
+									</div>
+									<div class="content">
+										<h3 class="main-links"><a href="">Men slip on shoes casual with</a></h3>
+										<div class="rating">
+											<div class="stars">
+												<img src="icons/star.svg" alt="">
+												<img src="icons/star.svg" alt="">
+												<img src="icons/star.svg" alt="">
+												<img src="icons/star.svg" alt="">
+												<img src="icons/star.svg" alt="">
+											</div>
+											<span class="mini-text">(2.548)</span>
+										</div>
+										<div class="price">
+											<span class="current">$129.99</span>
+											<span class="normal mini-text">$189.98</span>
+										</div>
+										<div class="mini-text">
+											<p>2975 sold</p>
+											<p>free shiping</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="features">
+			<div class="container">
+				<div class="wrapper">
+					<div class="column">
+						<div class="sectop flexitem">
+							<h2><span class="circle">Productos Destacados</span></h2>
+							<div class="second-links">
+								
+							</div>
+						</div>
+						<div class="products main flexrap">
+							<div class="item">
+								<div class="media">
+									<div class="image">
+										<a href="">
+											<img src="img/products/apparel1.jpg" alt="">
+										</a>
+									</div>
+
+									<div class="hoverable">
+										<ul>
+											<li class="active" ><a href="" class="icon"><img src="icons/heart.svg" alt=""></a></li>
+											
+											<li class="cart"><a href="" class="icon"><img src="icons/cart.svg" alt=""></a></li>
+										</ul>
+									</div>
+									<div class="discount circle flexcenter"></div>
+								</div>
+								<div class="content">
+									<div class="rating">
+										<div class="stars big">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+										</div>
+										<span class="mini-text">(2.548)</span>
+									</div>
+									<h3 class="main-links"><a href="">happy sailed womens summer boho floral</a></h3>
+									<div class="price">
+										<span class="current">$129.99</span>
+										<span class="normal mini-text">$189.98</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="media">
+									<div class="image">
+										<a href="">
+											<img src="img/products/apparel2.jpg" alt="">
+										</a>
+									</div>
+
+									<div class="hoverable">
+										<ul>
+											<li class="active" ><a href="" class="icon"><img src="icons/heart.svg" alt=""></a></li>
+											
+											<li class="cart"><a href="" class="icon"><img src="icons/cart.svg" alt=""></a></li>
+										</ul>
+									</div>
+									<div class="discount circle flexcenter"></div>
+								</div>
+								<div class="content">
+									<div class="rating">
+										<div class="stars big">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+										</div>
+										<span class="mini-text">(2.548)</span>
+									</div>
+									<h3 class="main-links"><a href="">happy sailed womens summer boho floral</a></h3>
+									<div class="price">
+										<span class="current">$129.99</span>
+										<span class="normal mini-text">$189.98</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="media">
+									<div class="image">
+										<a href="">
+											<img src="img/products/apparel3.jpg" alt="">
+										</a>
+									</div>
+
+									<div class="hoverable">
+										<ul>
+											<li class="active" ><a href="" class="icon"><img src="icons/heart.svg" alt=""></a></li>
+											
+											<li class="cart"><a href="" class="icon"><img src="icons/cart.svg" alt=""></a></li>
+										</ul>
+									</div>
+									<div class="discount circle flexcenter"></div>
+								</div>
+								<div class="content">
+									<div class="rating">
+										<div class="stars big">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+										</div>
+										<span class="mini-text">(2.548)</span>
+									</div>
+									<h3 class="main-links"><a href="">happy sailed womens summer boho floral</a></h3>
+									<div class="price">
+										<span class="current">$129.99</span>
+										<span class="normal mini-text">$189.98</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="media">
+									<div class="image">
+										<a href="">
+											<img src="img/products/apparel4.jpg" alt="">
+										</a>
+									</div>
+
+									<div class="hoverable">
+										<ul>
+											<li class="active" ><a href="" class="icon"><img src="icons/heart.svg" alt=""></a></li>
+											
+											<li class="cart"><a href="" class="icon"><img src="icons/cart.svg" alt=""></a></li>
+										</ul>
+									</div>
+									<div class="discount circle flexcenter"></div>
+								</div>
+								<div class="content">
+									<div class="rating">
+										<div class="stars big">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+										</div>
+										<span class="mini-text">(2.548)</span>
+									</div>
+									<h3 class="main-links"><a href="">happy sailed womens summer boho floral</a></h3>
+									<div class="price">
+										<span class="current">$129.99</span>
+										<span class="normal mini-text">$189.98</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="media">
+									<div class="image">
+										<a href="">
+											<img src="img/products/apparel1.jpg" alt="">
+										</a>
+									</div>
+
+									<div class="hoverable">
+										<ul>
+											<li class="active" ><a href="" class="icon"><img src="icons/heart.svg" alt=""></a></li>
+											
+											<li class="cart"><a href="" class="icon"><img src="icons/cart.svg" alt=""></a></li>
+										</ul>
+									</div>
+									<div class="discount circle flexcenter"></div>
+								</div>
+								<div class="content">
+									<div class="rating">
+										<div class="stars big">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+										</div>
+										<span class="mini-text">(2.548)</span>
+									</div>
+									<h3 class="main-links"><a href="">happy sailed womens summer boho floral</a></h3>
+									<div class="price">
+										<span class="current">$129.99</span>
+										<span class="normal mini-text">$189.98</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="media">
+									<div class="image">
+										<a href="">
+											<img src="img/products/apparel2.jpg" alt="">
+										</a>
+									</div>
+
+									<div class="hoverable">
+										<ul>
+											<li class="active" ><a href="" class="icon"><img src="icons/heart.svg" alt=""></a></li>
+											
+											<li class="cart"><a href="" class="icon"><img src="icons/cart.svg" alt=""></a></li>
+										</ul>
+									</div>
+									<div class="discount circle flexcenter"></div>
+								</div>
+								<div class="content">
+									<div class="rating">
+										<div class="stars big">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+										</div>
+										<span class="mini-text">(2.548)</span>
+									</div>
+									<h3 class="main-links"><a href="">happy sailed womens summer boho floral</a></h3>
+									<div class="price">
+										<span class="current">$129.99</span>
+										<span class="normal mini-text">$189.98</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="media">
+									<div class="image">
+										<a href="">
+											<img src="img/products/apparel3.jpg" alt="">
+										</a>
+									</div>
+
+									<div class="hoverable">
+										<ul>
+											<li class="active" ><a href="" class="icon"><img src="icons/heart.svg" alt=""></a></li>
+											
+											<li class="cart"><a href="" class="icon"><img src="icons/cart.svg" alt=""></a></li>
+										</ul>
+									</div>
+									<div class="discount circle flexcenter"></div>
+								</div>
+								<div class="content">
+									<div class="rating">
+										<div class="stars big">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+										</div>
+										<span class="mini-text">(2.548)</span>
+									</div>
+									<h3 class="main-links"><a href="">happy sailed womens summer boho floral</a></h3>
+									<div class="price">
+										<span class="current">$129.99</span>
+										<span class="normal mini-text">$189.98</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="media">
+									<div class="image">
+										<a href="">
+											<img src="img/products/apparel4.jpg" alt="">
+										</a>
+									</div>
+
+									<div class="hoverable">
+										<ul>
+											<li class="active" ><a href="" class="icon"><img src="icons/heart.svg" alt=""></a></li>
+											
+											<li class="cart"><a href="" class="icon"><img src="icons/cart.svg" alt=""></a></li>
+										</ul>
+									</div>
+									<div class="discount circle flexcenter"></div>
+								</div>
+								<div class="content">
+									<div class="rating">
+										<div class="stars big">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+										</div>
+										<span class="mini-text">(2.548)</span>
+									</div>
+									<h3 class="main-links"><a href="">happy sailed womens summer boho floral</a></h3>
+									<div class="price">
+										<span class="current">$129.99</span>
+										<span class="normal mini-text">$189.98</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="anuncios">
+			<div class="container">
+				<div class="box-anuncios">
+					<div class="media">
+						<div class="image"><img src="img/banner/banner1.jpg" alt=""></div>
+					</div>
+					<div class="content">
+						<span>Brutal saler</span>
+						<p>get the deak in here</p>
+						<h3>Living Room Chair</h3>
+						<a href="">Shop Now</a>
+					</div>
+				</div>
+				<div class="box-anuncios">
+					<div class="media">
+						<div class="image"><img src="img/banner/banner2.jpg" alt=""></div>
+					</div>
+					<div class="content">
+						<span>Brutal saler</span>
+						<p>get the deak in here</p>
+						<h3>Living Room Chair</h3>
+						<a href="">Shop Now</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="container">
+			<div class="columns">
+				<div class="column1">
+					<div class="column">
+						<h4>Ayuda y Contactos</h4>
+						<a href="">Tu cuenta</a>
+						<a href="">Tus Compras</a>
+						<a href="">Ayuda</a>
+						<a href="">Contactanos</a>
+					</div>
+					<div class="column">
+						<h4>Categorias</h4>
+						<a href="">Ropa Mujer</a>
+						<a href="">Ropa hombre</a>
+						<a href="">Electronica</a>
+						<a href="">Deportivo</a>
+					</div>
+				</div>
+				<div class="column1">
+					<div class="column">
+						<h4>Info Pago</h4>
+						<a href="">Desarrollador</a>
+						<a href="">Checkout Pro</a>
+						<a href="">Mis Ventas</a>
+					</div>
+					<div class="column">
+						<h4>Sobre nosotros</h4>
+						<a href="">Sobre esta pagina</a>
+						<a href="">Terminos y Servicios</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	  <script src="lib/swiperjs/swiper-bundle.min.js"></script>
+
+<script>
+	const d = document;
+	let searchBtn = d.getElementById('searchBtn');
+	let closeBtn = d.getElementById('closeBtn');
+	let cartBtn = d.getElementById('cartBtn');
+	let searchBox = d.getElementById('searchBox');
+	let divMenuToggle = d.getElementById('div-menuToggle');
+	let menuToggle = d.getElementById('menuToggle');
+	let categorias = d.getElementById('div-categorias');
+
+	let nav = d.getElementById('navigation');
+
+	searchBtn.onclick = function(){
+		searchBox.classList.add('active');
+		closeBtn.classList.add('active');
+		searchBtn.classList.add('active');
+		divMenuToggle.classList.remove('active');
+		cartBtn.classList.add('disabled');
+		categorias.classList.add('active');
+	}
+	closeBtn.onclick = function(){
+		searchBox.classList.remove('active');
+		closeBtn.classList.remove('active');
+		searchBtn.classList.remove('active');
+		divMenuToggle.classList.add('active');
+		cartBtn.classList.remove('disabled');
+		categorias.classList.remove('active');
+	}
+	divMenuToggle.onclick = function(){
+		nav.classList.toggle("active");
+		menuToggle.classList.toggle("active");
+	}
+
+var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      
+      loop: true,
+    });
+
+
+
+</script>
+<!-- <script src="lib/owlcarousel/owl.carousel.min.js"></script> -->
+</body>
+</html>

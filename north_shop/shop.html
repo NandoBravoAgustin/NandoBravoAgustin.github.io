@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>MultiShop - Online Shop Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="group">
+            <a href="" class="logo">Logo</a>
+            <ul class="navigation" id="navigation">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="shop.html">Tienda</a></li>
+                <li><a href="detalle.html">Detalles</a></li>
+                <li><a href="#">Mas</a></li>
+                <!-- <li><a href="">Home</a></li> -->
+            </ul>
+            
+        </div>
+        <div class="group">
+            <div class="search">
+                <span class="icon"><img src="icons/search.svg" class="searchBtn" id="searchBtn"></span>
+
+                <span class="icon"><img src="icons/close.svg" class="closeBtn" id="closeBtn"></span>
+                <span class="icon" id="cartBtn" class="cartBtn"><img src="icons/cart.svg"></span>
+                <div class="div-menuToggle active" id="div-menuToggle">
+                    <span class="menuToggle" id="menuToggle"></span>
+                </div>
+            </div>
+        </div>
+        <div class="searchBox" id="searchBox" >
+            <input type="text" placeholder="Search here . . .">
+        </div>
+    </header>
+    <div class="div-categorias" id="div-categorias">
+        <div class="cat">
+            <div class="box-cat">
+                <p>Categorias</p>
+                <span class="icon-cat"><img src="icons/flecha-abajo.svg" alt=""></span>
+            </div>
+        </div>
+    </div>
+    <div id="page" class="site" style="z-index: 1000000000000000000; background-color: #fff;">
+        <nav>
+            <ul>
+                <li class="active"><a href=""><img src="icons/home.svg" alt=""></a></li>
+                <li><a href=""><img src="icons/services.svg" alt=""></a></li>
+                <li><a href=""><img src="icons/shop.svg" alt=""></a></li>
+                <li class="active"><a href=""><img src="icons/notifications.svg" alt=""></a></li>
+                <li><a href=""><img src="icons/person.svg" alt=""></a></li>
+            </ul>
+        </nav>
+    </div>
+    <main class="section-shop">
+
+        <!-- Shop Start -->
+        <div class="container-fluid">
+            <div class="row px-xl-5">
+
+                <!-- Shop Sidebar Start -->
+                <div class="col-lg-3 col-md-4">
+                    <div class="collapse">
+                        <span class="submenu5">FILTRAR</span>
+                        <hr>
+                        <div class="has-child">
+                            <div class="content active">
+                                <!-- Price Start -->
+                                <h5 class="section-title position-relative text-uppercase mb-3"><span class="pr-3">Filtrar por precio</span></h5>
+                                <div class="bg-light p-4 mb-30">
+                                    <form>
+                                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                                            <input type="checkbox" class="custom-control-input" checked id="price-all">
+                                            <label class="custom-control-label" for="price-all">All Price</label>
+                                            <span class="badge border font-weight-normal">1000</span>
+                                        </div>
+                                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                                            <input type="checkbox" class="custom-control-input" id="price-1">
+                                            <label class="custom-control-label" for="price-1">$0 - $100</label>
+                                            <span class="badge border font-weight-normal">150</span>
+                                        </div>
+                                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                                            <input type="checkbox" class="custom-control-input" id="price-2">
+                                            <label class="custom-control-label" for="price-2">$100 - $200</label>
+                                            <span class="badge border font-weight-normal">295</span>
+                                        </div>
+                                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                                            <input type="checkbox" class="custom-control-input" id="price-3">
+                                            <label class="custom-control-label" for="price-3">$200 - $300</label>
+                                            <span class="badge border font-weight-normal">246</span>
+                                        </div>
+                                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                                            <input type="checkbox" class="custom-control-input" id="price-4">
+                                            <label class="custom-control-label" for="price-4">$300 - $400</label>
+                                            <span class="badge border font-weight-normal">145</span>
+                                        </div>
+                                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between">
+                                            <input type="checkbox" class="custom-control-input" id="price-5">
+                                            <label class="custom-control-label" for="price-5">$400 - $500</label>
+                                            <span class="badge border font-weight-normal">168</span>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- Price End -->
+                                
+                                <!-- Color Start -->
+                                <h5 class="section-title position-relative text-uppercase mb-3"><span class="pr-3">Filtrar por color</span></h5>
+                                <div class="bg-light p-4 mb-30">
+                                    <form>
+                                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                                            <input type="checkbox" class="custom-control-input" checked id="color-all">
+                                            <label class="custom-control-label" for="price-all">All Color</label>
+                                            <span class="badge border font-weight-normal">1000</span>
+                                        </div>
+                                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                                            <input type="checkbox" class="custom-control-input" id="color-1">
+                                            <label class="custom-control-label" for="color-1">Black</label>
+                                            <span class="badge border font-weight-normal">150</span>
+                                        </div>
+                                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                                            <input type="checkbox" class="custom-control-input" id="color-2">
+                                            <label class="custom-control-label" for="color-2">White</label>
+                                            <span class="badge border font-weight-normal">295</span>
+                                        </div>
+                                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                                            <input type="checkbox" class="custom-control-input" id="color-3">
+                                            <label class="custom-control-label" for="color-3">Red</label>
+                                            <span class="badge border font-weight-normal">246</span>
+                                        </div>
+                                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                                            <input type="checkbox" class="custom-control-input" id="color-4">
+                                            <label class="custom-control-label" for="color-4">Blue</label>
+                                            <span class="badge border font-weight-normal">145</span>
+                                        </div>
+                                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between">
+                                            <input type="checkbox" class="custom-control-input" id="color-5">
+                                            <label class="custom-control-label" for="color-5">Green</label>
+                                            <span class="badge border font-weight-normal">168</span>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- Color End -->
+
+                                <!-- Size Start -->
+                                <h5 class="section-title position-relative text-uppercase mb-3"><span class="pr-3">Filtrar por talla</span></h5>
+                                <div class="bg-light p-4 mb-30">
+                                    <form>
+                                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                                            <input type="checkbox" class="custom-control-input" checked id="size-all">
+                                            <label class="custom-control-label" for="size-all">All Size</label>
+                                            <span class="badge border font-weight-normal">1000</span>
+                                        </div>
+                                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                                            <input type="checkbox" class="custom-control-input" id="size-1">
+                                            <label class="custom-control-label" for="size-1">XS</label>
+                                            <span class="badge border font-weight-normal">150</span>
+                                        </div>
+                                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                                            <input type="checkbox" class="custom-control-input" id="size-2">
+                                            <label class="custom-control-label" for="size-2">S</label>
+                                            <span class="badge border font-weight-normal">295</span>
+                                        </div>
+                                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                                            <input type="checkbox" class="custom-control-input" id="size-3">
+                                            <label class="custom-control-label" for="size-3">M</label>
+                                            <span class="badge border font-weight-normal">246</span>
+                                        </div>
+                                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                                            <input type="checkbox" class="custom-control-input" id="size-4">
+                                            <label class="custom-control-label" for="size-4">L</label>
+                                            <span class="badge border font-weight-normal">145</span>
+                                        </div>
+                                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between">
+                                            <input type="checkbox" class="custom-control-input" id="size-5">
+                                            <label class="custom-control-label" for="size-5">XL</label>
+                                            <span class="badge border font-weight-normal">168</span>
+                                        </div>
+                                    </form>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    <!-- Size End -->
+                </div>
+                <!-- Shop Sidebar End -->
+
+                <div class="col-lg-9 col-md-8" id="products-shop">
+                <div class="features shop">
+                <div class="container" style="margin: auto !important;">
+                    <div class="wrapper">
+                        <div class="column">
+                            <div class="sectop flexitem">
+                                <h2><span class="circle">Productos Destacados</span></h2>
+                                <div class="second-links">
+                                </div>
+                            </div>
+                            <div class="products main flexrap">
+                                <div class="item">
+                                    <div class="media">
+                                        <div class="image">
+                                            <a href="">
+                                                <img src="img/products/apparel1.jpg" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="hoverable">
+                                            <ul>
+                                                <li class="active" ><a href="" class="icon"><img src="icons/heart.svg" alt=""></a></li>
+                                                
+                                                <li class="cart"><a href="" class="icon"><img src="icons/cart.svg" alt=""></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="discount circle flexcenter"></div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars big">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                            </div>
+                                            <span class="mini-text">(2.548)</span>
+                                        </div>
+                                        <h3 class="main-links"><a href="">happy sailed womens summer boho floral</a></h3>
+                                        <div class="price">
+                                            <span class="current">$129.99</span>
+                                            <span class="normal mini-text">$189.98</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="media">
+                                        <div class="image">
+                                            <a href="">
+                                                <img src="img/products/apparel2.jpg" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="hoverable">
+                                            <ul>
+                                                <li class="active" ><a href="" class="icon"><img src="icons/heart.svg" alt=""></a></li>
+                                                
+                                                <li class="cart"><a href="" class="icon"><img src="icons/cart.svg" alt=""></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="discount circle flexcenter"></div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars big">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                            </div>
+                                            <span class="mini-text">(2.548)</span>
+                                        </div>
+                                        <h3 class="main-links"><a href="">happy sailed womens summer boho floral</a></h3>
+                                        <div class="price">
+                                            <span class="current">$129.99</span>
+                                            <span class="normal mini-text">$189.98</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="media">
+                                        <div class="image">
+                                            <a href="">
+                                                <img src="img/products/apparel3.jpg" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="hoverable">
+                                            <ul>
+                                                <li class="active" ><a href="" class="icon"><img src="icons/heart.svg" alt=""></a></li>
+                                                
+                                                <li class="cart"><a href="" class="icon"><img src="icons/cart.svg" alt=""></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="discount circle flexcenter"></div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars big">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                            </div>
+                                            <span class="mini-text">(2.548)</span>
+                                        </div>
+                                        <h3 class="main-links"><a href="">happy sailed womens summer boho floral</a></h3>
+                                        <div class="price">
+                                            <span class="current">$129.99</span>
+                                            <span class="normal mini-text">$189.98</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="media">
+                                        <div class="image">
+                                            <a href="">
+                                                <img src="img/products/apparel4.jpg" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="hoverable">
+                                            <ul>
+                                                <li class="active" ><a href="" class="icon"><img src="icons/heart.svg" alt=""></a></li>
+                                                
+                                                <li class="cart"><a href="" class="icon"><img src="icons/cart.svg" alt=""></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="discount circle flexcenter"></div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars big">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                            </div>
+                                            <span class="mini-text">(2.548)</span>
+                                        </div>
+                                        <h3 class="main-links"><a href="">happy sailed womens summer boho floral</a></h3>
+                                        <div class="price">
+                                            <span class="current">$129.99</span>
+                                            <span class="normal mini-text">$189.98</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="media">
+                                        <div class="image">
+                                            <a href="">
+                                                <img src="img/products/apparel1.jpg" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="hoverable">
+                                            <ul>
+                                                <li class="active" ><a href="" class="icon"><img src="icons/heart.svg" alt=""></a></li>
+                                                
+                                                <li class="cart"><a href="" class="icon"><img src="icons/cart.svg" alt=""></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="discount circle flexcenter"></div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars big">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                            </div>
+                                            <span class="mini-text">(2.548)</span>
+                                        </div>
+                                        <h3 class="main-links"><a href="">happy sailed womens summer boho floral</a></h3>
+                                        <div class="price">
+                                            <span class="current">$129.99</span>
+                                            <span class="normal mini-text">$189.98</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="media">
+                                        <div class="image">
+                                            <a href="">
+                                                <img src="img/products/apparel2.jpg" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="hoverable">
+                                            <ul>
+                                                <li class="active" ><a href="" class="icon"><img src="icons/heart.svg" alt=""></a></li>
+                                                
+                                                <li class="cart"><a href="" class="icon"><img src="icons/cart.svg" alt=""></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="discount circle flexcenter"></div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars big">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                            </div>
+                                            <span class="mini-text">(2.548)</span>
+                                        </div>
+                                        <h3 class="main-links"><a href="">happy sailed womens summer boho floral</a></h3>
+                                        <div class="price">
+                                            <span class="current">$129.99</span>
+                                            <span class="normal mini-text">$189.98</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="media">
+                                        <div class="image">
+                                            <a href="">
+                                                <img src="img/products/apparel3.jpg" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="hoverable">
+                                            <ul>
+                                                <li class="active" ><a href="" class="icon"><img src="icons/heart.svg" alt=""></a></li>
+                                                
+                                                <li class="cart"><a href="" class="icon"><img src="icons/cart.svg" alt=""></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="discount circle flexcenter"></div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars big">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                            </div>
+                                            <span class="mini-text">(2.548)</span>
+                                        </div>
+                                        <h3 class="main-links"><a href="">happy sailed womens summer boho floral</a></h3>
+                                        <div class="price">
+                                            <span class="current">$129.99</span>
+                                            <span class="normal mini-text">$189.98</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="media">
+                                        <div class="image">
+                                            <a href="">
+                                                <img src="img/products/apparel4.jpg" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="hoverable">
+                                            <ul>
+                                                <li class="active" ><a href="" class="icon"><img src="icons/heart.svg" alt=""></a></li>
+                                                
+                                                <li class="cart"><a href="" class="icon"><img src="icons/cart.svg" alt=""></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="discount circle flexcenter"></div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars big">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                            </div>
+                                            <span class="mini-text">(2.548)</span>
+                                        </div>
+                                        <h3 class="main-links"><a href="">happy sailed womens summer boho floral</a></h3>
+                                        <div class="price">
+                                            <span class="current">$129.99</span>
+                                            <span class="normal mini-text">$189.98</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="media">
+                                        <div class="image">
+                                            <a href="">
+                                                <img src="img/products/apparel1.jpg" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="hoverable">
+                                            <ul>
+                                                <li class="active" ><a href="" class="icon"><img src="icons/heart.svg" alt=""></a></li>
+                                                
+                                                <li class="cart"><a href="" class="icon"><img src="icons/cart.svg" alt=""></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="discount circle flexcenter"></div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars big">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                            </div>
+                                            <span class="mini-text">(2.548)</span>
+                                        </div>
+                                        <h3 class="main-links"><a href="">happy sailed womens summer boho floral</a></h3>
+                                        <div class="price">
+                                            <span class="current">$129.99</span>
+                                            <span class="normal mini-text">$189.98</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="media">
+                                        <div class="image">
+                                            <a href="">
+                                                <img src="img/products/apparel2.jpg" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="hoverable">
+                                            <ul>
+                                                <li class="active" ><a href="" class="icon"><img src="icons/heart.svg" alt=""></a></li>
+                                                
+                                                <li class="cart"><a href="" class="icon"><img src="icons/cart.svg" alt=""></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="discount circle flexcenter"></div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars big">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                            </div>
+                                            <span class="mini-text">(2.548)</span>
+                                        </div>
+                                        <h3 class="main-links"><a href="">happy sailed womens summer boho floral</a></h3>
+                                        <div class="price">
+                                            <span class="current">$129.99</span>
+                                            <span class="normal mini-text">$189.98</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="media">
+                                        <div class="image">
+                                            <a href="">
+                                                <img src="img/products/apparel3.jpg" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="hoverable">
+                                            <ul>
+                                                <li class="active" ><a href="" class="icon"><img src="icons/heart.svg" alt=""></a></li>
+                                                
+                                                <li class="cart"><a href="" class="icon"><img src="icons/cart.svg" alt=""></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="discount circle flexcenter"></div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars big">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                            </div>
+                                            <span class="mini-text">(2.548)</span>
+                                        </div>
+                                        <h3 class="main-links"><a href="">happy sailed womens summer boho floral</a></h3>
+                                        <div class="price">
+                                            <span class="current">$129.99</span>
+                                            <span class="normal mini-text">$189.98</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="media">
+                                        <div class="image">
+                                            <a href="">
+                                                <img src="img/products/apparel4.jpg" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="hoverable">
+                                            <ul>
+                                                <li class="active" ><a href="" class="icon"><img src="icons/heart.svg" alt=""></a></li>
+                                                
+                                                <li class="cart"><a href="" class="icon"><img src="icons/cart.svg" alt=""></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="discount circle flexcenter"></div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars big">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                            </div>
+                                            <span class="mini-text">(2.548)</span>
+                                        </div>
+                                        <h3 class="main-links"><a href="">happy sailed womens summer boho floral</a></h3>
+                                        <div class="price">
+                                            <span class="current">$129.99</span>
+                                            <span class="normal mini-text">$189.98</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="media">
+                                        <div class="image">
+                                            <a href="">
+                                                <img src="img/products/apparel1.jpg" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="hoverable">
+                                            <ul>
+                                                <li class="active" ><a href="" class="icon"><img src="icons/heart.svg" alt=""></a></li>
+                                                
+                                                <li class="cart"><a href="" class="icon"><img src="icons/cart.svg" alt=""></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="discount circle flexcenter"></div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars big">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                            </div>
+                                            <span class="mini-text">(2.548)</span>
+                                        </div>
+                                        <h3 class="main-links"><a href="">happy sailed womens summer boho floral</a></h3>
+                                        <div class="price">
+                                            <span class="current">$129.99</span>
+                                            <span class="normal mini-text">$189.98</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="media">
+                                        <div class="image">
+                                            <a href="">
+                                                <img src="img/products/apparel2.jpg" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="hoverable">
+                                            <ul>
+                                                <li class="active" ><a href="" class="icon"><img src="icons/heart.svg" alt=""></a></li>
+                                                
+                                                <li class="cart"><a href="" class="icon"><img src="icons/cart.svg" alt=""></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="discount circle flexcenter"></div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars big">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                            </div>
+                                            <span class="mini-text">(2.548)</span>
+                                        </div>
+                                        <h3 class="main-links"><a href="">happy sailed womens summer boho floral</a></h3>
+                                        <div class="price">
+                                            <span class="current">$129.99</span>
+                                            <span class="normal mini-text">$189.98</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="media">
+                                        <div class="image">
+                                            <a href="">
+                                                <img src="img/products/apparel3.jpg" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="hoverable">
+                                            <ul>
+                                                <li class="active" ><a href="" class="icon"><img src="icons/heart.svg" alt=""></a></li>
+                                                
+                                                <li class="cart"><a href="" class="icon"><img src="icons/cart.svg" alt=""></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="discount circle flexcenter"></div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars big">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                            </div>
+                                            <span class="mini-text">(2.548)</span>
+                                        </div>
+                                        <h3 class="main-links"><a href="">happy sailed womens summer boho floral</a></h3>
+                                        <div class="price">
+                                            <span class="current">$129.99</span>
+                                            <span class="normal mini-text">$189.98</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="media">
+                                        <div class="image">
+                                            <a href="">
+                                                <img src="img/products/apparel4.jpg" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="hoverable">
+                                            <ul>
+                                                <li class="active" ><a href="" class="icon"><img src="icons/heart.svg" alt=""></a></li>
+                                                
+                                                <li class="cart"><a href="" class="icon"><img src="icons/cart.svg" alt=""></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="discount circle flexcenter"></div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars big">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                            </div>
+                                            <span class="mini-text">(2.548)</span>
+                                        </div>
+                                        <h3 class="main-links"><a href="">happy sailed womens summer boho floral</a></h3>
+                                        <div class="price">
+                                            <span class="current">$129.99</span>
+                                            <span class="normal mini-text">$189.98</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="media">
+                                        <div class="image">
+                                            <a href="">
+                                                <img src="img/products/apparel1.jpg" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="hoverable">
+                                            <ul>
+                                                <li class="active" ><a href="" class="icon"><img src="icons/heart.svg" alt=""></a></li>
+                                                
+                                                <li class="cart"><a href="" class="icon"><img src="icons/cart.svg" alt=""></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="discount circle flexcenter"></div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars big">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                            </div>
+                                            <span class="mini-text">(2.548)</span>
+                                        </div>
+                                        <h3 class="main-links"><a href="">happy sailed womens summer boho floral</a></h3>
+                                        <div class="price">
+                                            <span class="current">$129.99</span>
+                                            <span class="normal mini-text">$189.98</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="media">
+                                        <div class="image">
+                                            <a href="">
+                                                <img src="img/products/apparel2.jpg" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="hoverable">
+                                            <ul>
+                                                <li class="active" ><a href="" class="icon"><img src="icons/heart.svg" alt=""></a></li>
+                                                
+                                                <li class="cart"><a href="" class="icon"><img src="icons/cart.svg" alt=""></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="discount circle flexcenter"></div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars big">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                            </div>
+                                            <span class="mini-text">(2.548)</span>
+                                        </div>
+                                        <h3 class="main-links"><a href="">happy sailed womens summer boho floral</a></h3>
+                                        <div class="price">
+                                            <span class="current">$129.99</span>
+                                            <span class="normal mini-text">$189.98</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="media">
+                                        <div class="image">
+                                            <a href="">
+                                                <img src="img/products/apparel3.jpg" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="hoverable">
+                                            <ul>
+                                                <li class="active" ><a href="" class="icon"><img src="icons/heart.svg" alt=""></a></li>
+                                                
+                                                <li class="cart"><a href="" class="icon"><img src="icons/cart.svg" alt=""></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="discount circle flexcenter"></div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars big">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                            </div>
+                                            <span class="mini-text">(2.548)</span>
+                                        </div>
+                                        <h3 class="main-links"><a href="">happy sailed womens summer boho floral</a></h3>
+                                        <div class="price">
+                                            <span class="current">$129.99</span>
+                                            <span class="normal mini-text">$189.98</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="media">
+                                        <div class="image">
+                                            <a href="">
+                                                <img src="img/products/apparel4.jpg" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="hoverable">
+                                            <ul>
+                                                <li class="active" ><a href="" class="icon"><img src="icons/heart.svg" alt=""></a></li>
+                                                
+                                                <li class="cart"><a href="" class="icon"><img src="icons/cart.svg" alt=""></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="discount circle flexcenter"></div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars big">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                                <img src="icons/star.svg" alt="">
+                                            </div>
+                                            <span class="mini-text">(2.548)</span>
+                                        </div>
+                                        <h3 class="main-links"><a href="">happy sailed womens summer boho floral</a></h3>
+                                        <div class="price">
+                                            <span class="current">$129.99</span>
+                                            <span class="normal mini-text">$189.98</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br><br><br><br>
+                            <div class="col-12">
+                                <nav>
+                                  <ul class="pagination justify-content-center">
+                                    <li class="page-item disabled"><a class="page-link" href="#">Previous</span></a></li>
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                  </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                </div>
+            </div>
+        </div>
+        <!-- Shop End -->
+
+    </main>
+    <footer>
+        <div class="container">
+            <div class="columns">
+                <div class="column1">
+                    <div class="column">
+                        <h4>Ayuda y Contactos</h4>
+                        <a href="">Tu cuenta</a>
+                        <a href="">Tus Compras</a>
+                        <a href="">Ayuda</a>
+                        <a href="">Contactanos</a>
+                    </div>
+                    <div class="column">
+                        <h4>Categorias</h4>
+                        <a href="">Ropa Mujer</a>
+                        <a href="">Ropa hombre</a>
+                        <a href="">Electronica</a>
+                        <a href="">Deportivo</a>
+                    </div>
+                </div>
+                <div class="column1">
+                    <div class="column">
+                        <h4>Info Pago</h4>
+                        <a href="">Desarrollador</a>
+                        <a href="">Checkout Pro</a>
+                        <a href="">Mis Ventas</a>
+                    </div>
+                    <div class="column">
+                        <h4>Sobre nosotros</h4>
+                        <a href="">Sobre esta pagina</a>
+                        <a href="">Terminos y Servicios</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+   <!--  <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script> -->
+
+    <!-- Contact Javascript File -->
+    <!-- <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>-->
+
+    <!-- Template Javascript -->
+    <!--<script src="js/main.js"></script> -->
+    <script src="js/index.js"></script>
+    <script src="lib/swiperjs/swiper-bundle.min.js"></script>
+      <script src="lib/fslightbox/fslightbox.js"></script>
+</body>
+
+</html>

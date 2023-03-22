@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="lib/swiperjs/swiper-bundle.min.css" />
+<style>
+    
+  </style>
+</head>
+<body>
+	<header>
+		<div class="group">
+			<a href="" class="logo">Logo</a>
+			<ul class="navigation" id="navigation">
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="shop.html">Tienda</a></li>
+				<li><a href="detalle.html">Detalles</a></li>
+				<li><a href="#">Mas</a></li>
+				<!-- <li><a href="">Home</a></li> -->
+			</ul>
+			
+		</div>
+		<div class="group">
+			<div class="search">
+				<span class="icon"><img src="icons/search.svg" class="searchBtn" id="searchBtn"></span>
+
+				<span class="icon"><img src="icons/close.svg" class="closeBtn" id="closeBtn"></span>
+				<span class="icon" id="cartBtn" class="cartBtn"><img src="icons/cart.svg"></span>
+				<div class="div-menuToggle active" id="div-menuToggle">
+					<span class="menuToggle" id="menuToggle"></span>
+				</div>
+			</div>
+		</div>
+		<div class="searchBox" id="searchBox" >
+			<input type="text" placeholder="Search here . . .">
+		</div>
+	</header>
+	<div class="div-categorias" id="div-categorias">
+		<div class="cat">
+			<div class="box-cat">
+				<p>Categorias</p>
+				<span class="icon-cat"><img src="icons/flecha-abajo.svg" alt=""></span>
+			</div>
+		</div>
+	</div>
+	<div id="page" class="site" style="z-index: 1000000000000000000; background-color: #fff;">
+		<nav>
+			<ul>
+				<li class="active"><a href=""><img src="icons/home.svg" alt=""></a></li>
+				<li><a href=""><img src="icons/services.svg" alt=""></a></li>
+				<li><a href=""><img src="icons/shop.svg" alt=""></a></li>
+				<li class="active"><a href=""><img src="icons/notifications.svg" alt=""></a></li>
+				<li><a href=""><img src="icons/person.svg" alt=""></a></li>
+			</ul>
+		</nav>
+	</div>
+	<main class="detalle">
+		<div class="single-product">
+			<div class="container">
+				<div class="wrapper">
+					<div class="breadcrumb">
+						<ul class="flexitem">
+							<li><a href="">Tienda</a></li>
+							<li><a href="">Calzado</a></li>
+							<li><a href="">Men slip on shoes casual with arch support insoles</a></li>
+						</ul>
+					</div>
+					<!-- breadcrumb -->
+
+					<div class="column">
+						<div class="products one">
+							<div class="flexwrap">
+								<div class="row">
+									<div class="item is-sticky">
+										<!-- <div class="price">
+											<span class="discount">32%<br>OFF</span>
+										</div> -->
+										<div class="big-image">
+											<div class="big-image-wrapper swiper-wrapper">
+												<div class="image-show swiper-slide">
+													<a href="img/products/shoe1.jpg">
+														<img src="img/products/shoe1.jpg" alt="">
+													</a>
+												</div>
+												<div class="image-show swiper-slide">
+													<a href="img/products/shoe1-1.jpg">
+														<img src="img/products/shoe1-1.jpg" alt="">
+													</a>
+												</div>
+												<div class="image-show swiper-slide">
+													<a href="img/products/shoe1-2.jpg">
+														<img src="img/products/shoe1-2.jpg" alt="">
+													</a>
+												</div>
+												<div class="image-show swiper-slide">
+													<a href="img/products/shoe1.jpg">
+														<img src="img/products/shoe1.jpg" alt="">
+													</a>
+												</div>
+											</div>
+											
+										</div>
+
+										<div thumbSlider="" class="small-image">
+											<ul class="small-image-wrapper flexitem swiper-wrapper">
+
+												<li class="thumbnail-show swiper-slide">
+													<img src="img/products/shoe1.jpg" alt="">
+												</li>
+												<li class="thumbnail-show swiper-slide">
+													<img src="img/products/shoe1-1.jpg" alt="">
+												</li>
+												<li class="thumbnail-show swiper-slide">
+													<img src="img/products/shoe1-2.jpg" alt="">
+												</li>
+												<li class="thumbnail-show swiper-slide">
+													<img src="img/products/shoe1-3.jpg" alt="">
+												</li>
+												
+
+											</ul>
+										</div>
+
+									</div>
+								</div>
+								<div class="row">
+									<div class="item">
+										<h1>Men Slip On Shoes Casual with Arch Support Insoles</h1>
+										<div class="content">
+											<div class="rating">
+												<div class="stars">
+													<img src="icons/star.svg">
+													<img src="icons/star.svg">
+													<img src="icons/star.svg">
+													<img src="icons/star.svg">
+													<img src="icons/star.svg">
+													<p class="mini-text">2.251 reviews</p>
+													<a href="" class="add-review mini-text">Add Your Review</a>
+												</div>
+											</div>
+											<div class="stock-sku">
+												<span class="available">In Stock</span>
+												<p>Vendedor: <a href="#" class="sku mini-text">Administrador</a></p> 
+												<div class="price">
+													<span class="current">$180.90</span>
+													<span class="normal">$1189.89</span>
+												</div>
+											</div>
+											<div class="colors">
+												<p>Color</p>
+												<div class="variant">
+													<form action="">
+														<p>
+															<input type="radio" name="color" id="cored" checked="" class="color">
+															<label for="cored" class="circle cored"></label>
+														</p>
+														<p>
+															<input type="radio" name="color" id="coblue" class="color">
+															<label for="coblue" class="circle coblue"></label>
+														</p>
+														<p>
+															<input type="radio" name="color" id="coyellow" class="color">
+															<label for="coyellow" class="circle coyellow"></label>
+														</p>
+													</form>
+												</div>
+											</div>
+
+											<div class="sizes">
+												<p>Size</p>
+												<div class="variant">
+													<form action="">
+														<p>
+															<input type="radio" name="size" id="size-37" class="size">
+															<label for="size-37" class="circle size">37</label>
+														</p>
+														<p>
+															<input type="radio" name="size" id="size-38" class="size">
+															<label for="size-38" class="circle size">38</label>
+														</p>
+														<p>
+															<input type="radio" name="size" id="size-39" class="size">
+															<label for="size-39" class="circle size">39</label>
+														</p>
+														<p>
+															<input type="radio" name="size" id="size-40" class="size" checked="">
+															<label for="size-40" class="circle size">40</label>
+														</p>
+													</form>
+												</div>
+											</div>
+											<div class="action">
+												<div class="qty-control flexitem">
+													<button class="minus circle">-</button>
+													<input type="text" value="1">
+													<button class="plus circle">+</button>
+												</div>
+												<div class="button-cart">
+													<button>Add to cart</button>
+												</div>
+												<div class="wish-share">
+													<ul class="flexitem second-links">
+														<li>
+															<a href="">
+																<span class="icon-large icon"><img src="icons/heart.svg"></span>
+																<span>Favoritos</span>
+															</a>
+														</li>
+														<li>
+															<a href="">
+																<span class="icon-large icon"><img src="icons/share.svg"></span>
+																<span>Compartir</span>
+															</a>
+														</li>
+
+													</ul>
+												</div>
+											</div>
+											<div class="description collapse">
+												<ul>
+													<li class="has-child">
+														<h3 class="icon-small submenu">Informacion</h3>
+														<ul class="content has-child-content" id="has-child-content">
+															<li>
+																<span>Marca</span>
+																<span>Nike</span>
+															</li>
+															<li><span>Actividad</span><span>Correr</span></li>
+															<li><span>Material</span><span>Gamusa</span></li>
+															<li><span>Género</span><span>Hombre</span></li>
+														</ul>
+													</li>
+													<li class="has-child">
+														<h3 class="icon-small submenu2">Detalle</h3>
+														<div class="content has-child-content2" id="has-child-content">
+															<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos ex, architecto eaque fuga ducimus quasi repudiandae, itaque deleniti omnis debitis qui esse, sapiente quibusdam autem facere ratione odit repellat consequuntur.</p>
+															<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente vitae similique nam obcaecati non, porro exercitationem recusandae ratione soluta, architecto, rem! Beatae, quo distinctio? Autem veritatis cupiditate earum ratione deleniti!</p>
+														</div>
+													</li>
+													<li class="has-child">
+														<h3 class="icon-small submenu3">Custom</h3>
+														<div class="content has-child-content3" id="has-child-content">
+															<table>
+																<thead>
+																	<tr>
+																		<th>Tamaño</th>
+																		<th>Busto<span class="mini-text">(cm)</span></th>
+																		<th>Cintura<span class="mini-text">(cm)</span></th>
+																		<th>Cadera<span class="mini-text">(cm)</span></th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr>
+																		<td>XS</td>
+																		<td>82.5</td>
+																		<td>62</td>
+																		<td>87.5</td>
+																	</tr>
+																	<tr>
+																		<td>S</td>
+																		<td>85</td>
+																		<td>63.5</td>
+																		<td>89</td>
+																	</tr>
+																	<tr>
+																		<td>H</td>
+																		<td>87.5</td>
+																		<td>67.5</td>
+																		<td>93</td>
+																	</tr>
+																	<tr>
+																		<td>L</td>
+																		<td>90</td>
+																		<td>72.5</td>
+																		<td>90</td>
+																	</tr>
+																	<tr>
+																		<td>XL</td>
+																		<td>93</td>
+																		<td>77.5</td>
+																		<td>103</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</li>
+													<li class="has-child">
+														<h3 class="icon-small submenu4">Comentarios</h3>
+														<div class="content has-child-content4">
+															<div class="reviews">
+																<h1>Comentarios</h1>
+																<div class="stars-qualification">
+																	<h2>4.9</h2>
+																	<span>23 Revisiones</span>
+																</div>
+																<div class="review-button">
+																	<h3>Escribir Comentario</h3>
+																</div>
+																<div class="review-contents">
+																	<div class="review-block">
+																		<div class="name-date">
+																			<span class="name">Nando Agustin Bravo</span>
+																			<span class="date">09/03/2022</span>
+																		</div>
+																		<div class="stars">
+																			<img src="icons/star.svg" alt="">
+																			<img src="icons/star.svg" alt="">
+																			<img src="icons/star.svg" alt="">
+																			<img src="icons/star.svg" alt="">
+																			<img src="icons/star.svg" alt="">
+																		</div>
+																		<div class="coment">
+																			<div class="title">
+																				<h3>AWESOME PRODUCT!</h3>
+																			</div>
+																			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In aut ex provident sapiente, eaque dolores, id sequi, minus soluta quos quasi amet debitis mollitia nostrum dignissimos rem earum voluptate iste?</p>
+																		</div>
+																	</div>
+																	<hr>
+																	<div class="review-block">
+																		<div class="name-date">
+																			<span class="name">Nando Agustin Bravo</span>
+																			<span class="date">09/03/2022</span>
+																		</div>
+																		<div class="stars">
+																			<img src="icons/star.svg" alt="">
+																			<img src="icons/star.svg" alt="">
+																			<img src="icons/star.svg" alt="">
+																			<img src="icons/star.svg" alt="">
+																			<img src="icons/star.svg" alt="">
+																		</div>
+																		<div class="coment">
+																			<div class="title">
+																				<h3>AWESOME PRODUCT!</h3>
+																			</div>
+																			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In aut ex provident sapiente, eaque dolores, id sequi, minus soluta quos quasi amet debitis mollitia nostrum dignissimos rem earum voluptate iste?</p>
+																		</div>
+																	</div>
+																	
+																	<div class="view-more">
+																		<h4>Ver mas</h4>
+																	</div>
+																</div>
+																<hr>
+																<div class="write-review">
+																	<h1>Escribe un comentario</h1>
+																	<form action="" class="form-qualification">
+																		<div class="qualification">
+																			<p>Cuantas estrellas le das a este producto</p>
+																				<div class="stars-select">
+																					<input type="radio" name="star" id="star" class="star">
+																					<label for="star" class="qual-stars"><img src="icons/star.svg" alt=""></label>
+																					<input type="radio" name="star" id="star2" class="star">
+																					<label for="star2" class="qual-stars"><img src="icons/star.svg" alt=""></label>
+																					<input type="radio" name="star" id="star3" class="star">
+																					<label for="star3" class="qual-stars"><img src="icons/star.svg" alt=""></label>
+																					<input type="radio" name="star" id="star4" class="star">
+																					<label for="star4" class="qual-stars"><img src="icons/star.svg" alt=""></label>
+																					<input type="radio" name="star" id="stars" class="star">
+																					<label for="stars" class="qual-stars"><img src="icons/star.svg" alt=""></label>
+																				</div>
+																		</div>	
+																		<div class="coment-title t">
+																			<label for="title-write">Titulo</label>
+																			<input type="text" id="title-write">
+																		</div>
+																		<div class="coment-title c">
+																			<label for="coment-write">Comentario</label>
+																			<textarea name="" id="coment-write" cols="30" rows="10"></textarea>
+																			
+																		</div>
+
+																		<input type="submit" name="" id="" value="Enviar">
+																	</form>
+																</div>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</div>
+
+												
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="features">
+			<div class="container">
+				<div class="wrapper">
+					<div class="column">
+						<div class="sectop flexitem">
+							<h2><span class="circle">Productos Destacados</span></h2>
+							<div class="second-links">
+								
+							</div>
+						</div>
+						<div class="products main flexrap">
+							<div class="item">
+								<div class="media">
+									<div class="image">
+										<a href="">
+											<img src="img/products/apparel1.jpg" alt="">
+										</a>
+									</div>
+
+									<div class="hoverable">
+										<ul>
+											<li class="active" ><a href="" class="icon"><img src="icons/heart.svg" alt=""></a></li>
+											
+											<li class="cart"><a href="" class="icon"><img src="icons/cart.svg" alt=""></a></li>
+										</ul>
+									</div>
+									<div class="discount circle flexcenter"></div>
+								</div>
+								<div class="content">
+									<div class="rating">
+										<div class="stars big">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+										</div>
+										<span class="mini-text">(2.548)</span>
+									</div>
+									<h3 class="main-links"><a href="">happy sailed womens summer boho floral</a></h3>
+									<div class="price">
+										<span class="current">$129.99</span>
+										<span class="normal mini-text">$189.98</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="media">
+									<div class="image">
+										<a href="">
+											<img src="img/products/apparel2.jpg" alt="">
+										</a>
+									</div>
+
+									<div class="hoverable">
+										<ul>
+											<li class="active" ><a href="" class="icon"><img src="icons/heart.svg" alt=""></a></li>
+											
+											<li class="cart"><a href="" class="icon"><img src="icons/cart.svg" alt=""></a></li>
+										</ul>
+									</div>
+									<div class="discount circle flexcenter"></div>
+								</div>
+								<div class="content">
+									<div class="rating">
+										<div class="stars big">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+										</div>
+										<span class="mini-text">(2.548)</span>
+									</div>
+									<h3 class="main-links"><a href="">happy sailed womens summer boho floral</a></h3>
+									<div class="price">
+										<span class="current">$129.99</span>
+										<span class="normal mini-text">$189.98</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="media">
+									<div class="image">
+										<a href="">
+											<img src="img/products/apparel3.jpg" alt="">
+										</a>
+									</div>
+
+									<div class="hoverable">
+										<ul>
+											<li class="active" ><a href="" class="icon"><img src="icons/heart.svg" alt=""></a></li>
+											
+											<li class="cart"><a href="" class="icon"><img src="icons/cart.svg" alt=""></a></li>
+										</ul>
+									</div>
+									<div class="discount circle flexcenter"></div>
+								</div>
+								<div class="content">
+									<div class="rating">
+										<div class="stars big">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+										</div>
+										<span class="mini-text">(2.548)</span>
+									</div>
+									<h3 class="main-links"><a href="">happy sailed womens summer boho floral</a></h3>
+									<div class="price">
+										<span class="current">$129.99</span>
+										<span class="normal mini-text">$189.98</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="media">
+									<div class="image">
+										<a href="">
+											<img src="img/products/apparel4.jpg" alt="">
+										</a>
+									</div>
+
+									<div class="hoverable">
+										<ul>
+											<li class="active" ><a href="" class="icon"><img src="icons/heart.svg" alt=""></a></li>
+											
+											<li class="cart"><a href="" class="icon"><img src="icons/cart.svg" alt=""></a></li>
+										</ul>
+									</div>
+									<div class="discount circle flexcenter"></div>
+								</div>
+								<div class="content">
+									<div class="rating">
+										<div class="stars big">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+										</div>
+										<span class="mini-text">(2.548)</span>
+									</div>
+									<h3 class="main-links"><a href="">happy sailed womens summer boho floral</a></h3>
+									<div class="price">
+										<span class="current">$129.99</span>
+										<span class="normal mini-text">$189.98</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="media">
+									<div class="image">
+										<a href="">
+											<img src="img/products/apparel1.jpg" alt="">
+										</a>
+									</div>
+
+									<div class="hoverable">
+										<ul>
+											<li class="active" ><a href="" class="icon"><img src="icons/heart.svg" alt=""></a></li>
+											
+											<li class="cart"><a href="" class="icon"><img src="icons/cart.svg" alt=""></a></li>
+										</ul>
+									</div>
+									<div class="discount circle flexcenter"></div>
+								</div>
+								<div class="content">
+									<div class="rating">
+										<div class="stars big">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+										</div>
+										<span class="mini-text">(2.548)</span>
+									</div>
+									<h3 class="main-links"><a href="">happy sailed womens summer boho floral</a></h3>
+									<div class="price">
+										<span class="current">$129.99</span>
+										<span class="normal mini-text">$189.98</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="media">
+									<div class="image">
+										<a href="">
+											<img src="img/products/apparel2.jpg" alt="">
+										</a>
+									</div>
+
+									<div class="hoverable">
+										<ul>
+											<li class="active" ><a href="" class="icon"><img src="icons/heart.svg" alt=""></a></li>
+											
+											<li class="cart"><a href="" class="icon"><img src="icons/cart.svg" alt=""></a></li>
+										</ul>
+									</div>
+									<div class="discount circle flexcenter"></div>
+								</div>
+								<div class="content">
+									<div class="rating">
+										<div class="stars big">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+										</div>
+										<span class="mini-text">(2.548)</span>
+									</div>
+									<h3 class="main-links"><a href="">happy sailed womens summer boho floral</a></h3>
+									<div class="price">
+										<span class="current">$129.99</span>
+										<span class="normal mini-text">$189.98</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="media">
+									<div class="image">
+										<a href="">
+											<img src="img/products/apparel3.jpg" alt="">
+										</a>
+									</div>
+
+									<div class="hoverable">
+										<ul>
+											<li class="active" ><a href="" class="icon"><img src="icons/heart.svg" alt=""></a></li>
+											
+											<li class="cart"><a href="" class="icon"><img src="icons/cart.svg" alt=""></a></li>
+										</ul>
+									</div>
+									<div class="discount circle flexcenter"></div>
+								</div>
+								<div class="content">
+									<div class="rating">
+										<div class="stars big">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+										</div>
+										<span class="mini-text">(2.548)</span>
+									</div>
+									<h3 class="main-links"><a href="">happy sailed womens summer boho floral</a></h3>
+									<div class="price">
+										<span class="current">$129.99</span>
+										<span class="normal mini-text">$189.98</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="media">
+									<div class="image">
+										<a href="">
+											<img src="img/products/apparel4.jpg" alt="">
+										</a>
+									</div>
+
+									<div class="hoverable">
+										<ul>
+											<li class="active" ><a href="" class="icon"><img src="icons/heart.svg" alt=""></a></li>
+											
+											<li class="cart"><a href="" class="icon"><img src="icons/cart.svg" alt=""></a></li>
+										</ul>
+									</div>
+									<div class="discount circle flexcenter"></div>
+								</div>
+								<div class="content">
+									<div class="rating">
+										<div class="stars big">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+											<img src="icons/star.svg" alt="">
+										</div>
+										<span class="mini-text">(2.548)</span>
+									</div>
+									<h3 class="main-links"><a href="">happy sailed womens summer boho floral</a></h3>
+									<div class="price">
+										<span class="current">$129.99</span>
+										<span class="normal mini-text">$189.98</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		
+
+		<div class="anuncios">
+			<div class="container">
+				<div class="box-anuncios">
+					<div class="media">
+						<div class="image"><img src="img/banner/banner1.jpg" alt=""></div>
+					</div>
+					<div class="content">
+						<span>Brutal saler</span>
+						<p>get the deak in here</p>
+						<h3>Living Room Chair</h3>
+						<a href="">Shop Now</a>
+					</div>
+				</div>
+				<div class="box-anuncios">
+					<div class="media">
+						<div class="image"><img src="img/banner/banner2.jpg" alt=""></div>
+					</div>
+					<div class="content">
+						<span>Brutal saler</span>
+						<p>get the deak in here</p>
+						<h3>Living Room Chair</h3>
+						<a href="">Shop Now</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="container">
+			<div class="columns">
+				<div class="column1">
+					<div class="column">
+						<h4>Ayuda y Contactos</h4>
+						<a href="">Tu cuenta</a>
+						<a href="">Tus Compras</a>
+						<a href="">Ayuda</a>
+						<a href="">Contactanos</a>
+					</div>
+					<div class="column">
+						<h4>Categorias</h4>
+						<a href="">Ropa Mujer</a>
+						<a href="">Ropa hombre</a>
+						<a href="">Electronica</a>
+						<a href="">Deportivo</a>
+					</div>
+				</div>
+				<div class="column1">
+					<div class="column">
+						<h4>Info Pago</h4>
+						<a href="">Desarrollador</a>
+						<a href="">Checkout Pro</a>
+						<a href="">Mis Ventas</a>
+					</div>
+					<div class="column">
+						<h4>Sobre nosotros</h4>
+						<a href="">Sobre esta pagina</a>
+						<a href="">Terminos y Servicios</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	  <script src="lib/swiperjs/swiper-bundle.min.js"></script>
+	  <script src="lib/fslightbox/fslightbox.js"></script>
+<script src="js/index.js"></script>
+<script src="js/detalle.js"></script>
+<!-- <script src="lib/owlcarousel/owl.carousel.min.js"></script> -->
+</body>
+</html>
